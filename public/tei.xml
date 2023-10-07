@@ -1,0 +1,2401 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl"
+href="TEIManuscriptContents.xsl"?>
+<!--?xml-stylesheet
+type="text/xsl"
+href="TEIManuscriptBiblio.xsl"?-->
+<!--?xml-stylesheet
+type="text/xsl" href="TEIManuscriptDesc.xsl"?-->
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.tei-c.org/ns/1.0 https://www.tei-c.org/release/xml/tei/custom/schema/xsd/tei_all.xsd">
+
+    <!-- RMP used Aug111 - short as the basis for Naples IV.G.68 - short 1/8/11 -->
+    <!-- RMP began building the complete description for Naples 13/3/2012 -->
+    <!-- Elizabeth McAulay revised to conform to new XSD 2023-09-22 -->
+
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title />
+            </titleStmt>
+            <publicationStmt>
+                <publisher />
+            </publicationStmt>
+            <sourceDesc>
+                <bibl />
+            </sourceDesc>
+        </fileDesc>
+    </teiHeader>
+
+    <text>
+        <body>
+            <msDesc>
+                <msIdentifier facs="p21198-zz00294sdx">
+                    <repository>Naples, Biblioteca Nazionale</repository>
+                    <idno>Ms. IV.G.68</idno>
+                    <msName>Boethius; Prudentius; Martianus</msName>
+                </msIdentifier>
+
+                <msContents>
+
+                    <msItem n="1">
+                        <locus from="1r" to="1r" facs="p21198-zz00294sff"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=0">f.
+                            1r</locus>
+                        <title>Eugenius Toletanus, Carmen VI ['Contra Ebrietatem']</title>
+                        <incipit>Qui cupis esse bonus ...</incipit>
+                        <explicit>... suppungit anhelitus artus.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 1236</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Eugenius Toletanus</author>
+                                    <title level="m">Carmen VI. Contra Ebrietatem</title>
+                                    <title level="s">CCSL</title>
+                                    <editor>P.F. Alberto</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">114</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>2005</date>
+                                        <biblScope unit="pp">215-16</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Eugenius Toletanus</author>
+                                    <title level="m">Carmen VI. Contra Ebrietatem</title>
+                                    <title level="s">MGH Auct. ant.</title>
+                                    <editor>F. Vollmer</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">14</biblScope>
+                                        <publisher>Weidmann</publisher>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <date>1905</date>
+                                        <biblScope unit="pp">236-7</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://www.mgh.de/dmgh/resolving/MGH_Auct._ant._14_S._236">
+                                    dMGH</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="https%3A%2F%2Fcpps.brepolis.net%2Fbmb%2Fsearch.cfm%3Faction%3Dsearch_simple_result%26startrow%3D1%26search_order%3Dyear_desc%26add_to_search_history%3D1%26log_simplesearch%3D1%26source%3DIMB%26allfields%3D%2522Eugenius%2BII%252C%2Barchbishop%2Bof%2BToledo%2522%26author%3D%26class_01%3DAll%2BAcademic%2BDisciplines%26class_02%3DAll%2BGeographical%2BAreas%26century_from%3D%26century_to%3D">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e401670">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+
+                    <msItem n="2">
+                        <locus from="1v" to="1v" facs="p21198-zz00294sgz"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=1">f.
+                            1v</locus>
+                        <title>[Commentarius anonynmi in Boetii Consolationem Philosophiae]</title>
+                        <incipit>Asstitisse sibi supra uerticem uisa est mulier. Id est sapientia
+                            ...</incipit>
+                        <explicit>... flectitur iudex ad misericordiam sępe.</explicit>
+                        <note>Lemmas follow the Consolatio I p. 1 to I p. 4 [Moreschini, p. 4.2 - p.
+                            16.117 / Peiper p. 4.2 - p. 15.115]</note>
+
+                        <listBibl>
+                            <head>Comparable Texts</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Iohannes Scottus Eriugena [?]</author>
+                                    <title level="m">Seaculi noni auctoris in Boetii Consolationem
+                                        Philosophiae commentarius</title>
+                                    <title level="s">Papers and Monographs of the American Academy
+                                        in Rome</title>
+                                    <editor>E.T. Silk</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">9</biblScope>
+                                        <publisher>American Academy in Rome</publisher>
+                                        <pubPlace>Rome</pubPlace>
+                                        <date>1935</date>
+                                        <biblScope unit="pp">12.12–44.21</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Similar but far from identical text</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Remigius Autissiodorensis [?]</author>
+                                    <title level="a">The Commentary of Remigius of Auxerre</title>
+                                    <title level="m">Seaculi noni auctoris in Boetii Consolationem
+                                        Philosophiae commentarius</title>
+                                    <title level="s">Papers and Monographs of the American Academy
+                                        in Rome</title>
+                                    <editor>E.T. Silk</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">9</biblScope>
+                                        <publisher>American Academy in Rome</publisher>
+                                        <pubPlace>Rome</pubPlace>
+                                        <date>1935</date>
+                                        <biblScope unit="pp">313–316</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Similar but far from identical text</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Roti, Grant C.</author>
+                                    <title level="u">Anonymus in Boetii consolationem Philosophiae
+                                        commentarius ex Sangallensis codice liber primus</title>
+                                    <note>PhD. diss.</note>
+                                    <imprint>
+                                        <pubPlace>Albany</pubPlace>
+                                        <publisher>State University of New York</publisher>
+                                        <date>1979</date>
+                                        <biblScope unit="pp">13.4–71.15</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://proquest.umi.com/pqdweb?did=751939061&amp;sid=2&amp;Fmt=6&amp;clientId=1564&amp;RQT=309&amp;VName=PQD"
+                                    >Proquest
+                                    Digital Dissertations (Subscription required)</ref></note>
+                                <note>Similar but far from identical text</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=boethius+commentaries">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205510">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="3">
+                        <locus from="2r" to="4r" facs="p21198-zz00294shg"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=2">f.
+                            2r–4r</locus>
+                        <title>Lupus Servatus, De metris Boetii libellus</title>
+                        <rubric>Incipit Prologus sequentis operis</rubric>
+                        <incipit>Quinque libros philosophicae consolationis insignis auctor boetius
+                            xxvii ...</incipit>
+                        <explicit>... permeant figuris ... per simplices computari.</explicit>
+
+
+                        <listBibl>
+                            <head>Edition</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Lupus Servatus</author>
+                                    <title level="a">De metris Boetii libellus</title>
+                                    <title level="m">Anicii Manlii Severini Boetii Philosophiae
+                                        Consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">xxv-xxviiii</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PR25">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Codices Boethiani</title>
+                                    <editor>M. Passalacqua and L. Smith</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">3</biblScope>
+                                        <publisher>The Warburg Institute</publisher>
+                                        <pubPlace>London</pubPlace>
+                                        <date>2001</date>
+                                        <biblScope unit="pp">17</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <biblStruct>
+
+                                <analytic>
+                                    <author>Brown, Virginia</author>
+                                    <title level="a">Lupus of Ferrières on the Metres of Boethius'</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Latin Script and Letters, A.D. 400-900:
+                                        Festschrift Presented to Ludwig Bieler on the Occasion of
+                                        His 70th Birthday</title>
+                                    <editor>John J. O'Meara and Bern Naumann</editor>
+                                    <imprint>
+                                        <biblScope unit="vol"></biblScope>
+                                        <publisher>Brill</publisher>
+                                        <pubPlace>Leiden</pubPlace>
+                                        <date>1976</date>
+                                        <biblScope unit="pp">63-79</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=2MQUAAAAIAAJ&amp;pg=PA63">Google
+                                    Books</ref></note>
+                            </biblStruct>
+
+
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=lupus+boethius">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e600360">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="4">
+                        <locus from="4r" to="4v" facs="p21198-zz00294snj"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=6">f.
+                            4r-v</locus>
+                        <title>Vita Boethii I</title>
+                        <incipit>Tempore theoterici regis insignis auctor boetius...</incipit>
+                        <explicit>... neque uirgilio in metro inferior floruit.</explicit>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="a">Vita Boetii I</title>
+                                    <title level="m">Anicii Manlii Severini Boetii Philosophiae
+                                        Consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">xxx-xxxi</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PR30">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - life%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+
+                    <msItem n="5">
+                        <locus from="4v" to="92r" facs="p21198-zz00294sp2"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=7">f.
+                            4v–92r</locus>
+                        <title>Anicius Manlius Severinus Boethius, De Consolatione Philosophiae</title>
+                        <rubric>Anicii manlii seuerini boetii u.c. et inlust. ex cons. ord. ex mag.
+                            off. atque patricii philosophicae consolationis liber primus incipit
+                            feliciter nec non et gratuiter domino fauente amen</rubric>
+                        <incipit>Carmina qui quondam studio florente peregi ...</incipit>
+                        <explicit>... agitis iudicis cun\c/ta cerneritis; Anitii manlii seuerini
+                            boetii u.c. et inl. ex cons. ord. ex mag. off. atque patr. philosophicae
+                            consolationis liber quintus finit felicit[ter].</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 878</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">De consolatione philosophiae</title>
+                                    <title level="m">Boethius: De consolatione philosophiae;
+                                        opuscula theologica</title>
+                                    <title level="s">Bibliotheca Teubneriana</title>
+                                    <editor>C. Moreschini</editor>
+                                    <imprint>
+                                        <publisher>K.G. Saur</publisher>
+                                        <pubPlace>Munich and Leipzig</pubPlace>
+                                        <date>2005</date>
+                                        <biblScope unit="pp">3–162</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">The Consolation of Philosophy</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <editor>E.K. Rand</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">130–434</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Not a critical edition, but independently constructed text by
+                                    Rand</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Philosophiae consolatio</title>
+                                    <title level="s">CCSL</title>
+                                    <editor>L. Bieler</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">94</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>1957</date>
+                                        <biblScope unit="pp">1–105</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N</note>
+                            </biblStruct>
+
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Philosophiae consolationis libri quinque</title>
+                                    <title level="s">CSEL</title>
+                                    <editor>G. Weinberger (with R. Peiper, G. Schepss, A.
+                                        Engelbrecht &amp; E. Hauler)</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">67</biblScope>
+                                        <publisher>Hoelder-Pichler-Tempsky</publisher>
+                                        <pubPlace>Vienna</pubPlace>
+                                        <date>1934</date>
+                                        <biblScope unit="pp">1–127</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Anicii Manlii Severini Boetii: Philosophiae
+                                        consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">3–145</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PA3">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">The Consolation of Philosophy</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>S.J. Tester</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">131–435</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - De consolatione philosophiae%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205490">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                        <msItem n="5_1">
+                            <locus from="5r" to="17r" facs="p21198-zz00294sqk">f. 5r-17r</locus>
+                            <title>Liber I</title>
+                        </msItem>
+
+                        <msItem n="5_2">
+                            <locus from="17v" to="34r" facs="p21198-zz00294tk0">f. 17v-34r</locus>
+                            <title>Liber II</title>
+                        </msItem>
+
+                        <msItem n="5_3">
+                            <locus from="34r" to="57v" facs="p21198-zz00294vqj">f. 34r-57v</locus>
+                            <title>Liber III</title>
+                        </msItem>
+
+                        <msItem n="5_4">
+                            <locus from="57v" to="77v" facs="p21198-zz00294xbt">f. 57v-77v</locus>
+                            <title>Liber IIII</title>
+                        </msItem>
+
+                        <msItem n="5_5">
+                            <locus from="77v" to="92r" facs="p21198-zz00294zkx">f. 77v-92r</locus>
+                            <title>LIber V</title>
+                        </msItem>
+                    </msItem>
+
+                    <msItem n="6">
+                        <locus from="5r" to="92r" facs="p21198-zz00294sqk"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=8">f.
+                            5r-92r</locus>
+                        <title>[Anonymus in Boetii Consolationem Philosophiae commentarius]</title>
+                        <note>Marginal and interlinear glosses to the text of Boethius' CP</note>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Roti, Grant C.</author>
+                                    <title level="u">Anonymus in Boetii consolationem Philosophiae
+                                        commentarius ex Sangallensis codice liber primus</title>
+                                    <note>PhD. diss.</note>
+                                    <imprint>
+                                        <pubPlace>Albany</pubPlace>
+                                        <publisher>State University of New York</publisher>
+                                        <date>1979</date>
+                                        <biblScope unit="pp">1-111</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://proquest.umi.com/pqdweb?did=751939061&amp;sid=2&amp;Fmt=6&amp;clientId=1564&amp;RQT=309&amp;VName=PQD"
+                                    >Proquest
+                                    Digital Dissertations (Subscription required)</ref></note>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N (cf. p. xxv-xxvi)</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Starck, Taylor</author>
+                                    <title level="a">Unpublished Old High German Glosses to Boethius
+                                        and Prudentius</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Mediaeval Studies in Honor of Jeremiah Denis
+                                        Matthias Ford</title>
+                                    <editor>U.T. Holmes and A.J. Denomy</editor>
+                                    <imprint>
+                                        <biblScope unit="pp">304-308</biblScope>
+                                        <date>1948</date>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <publisher>Harvard UP</publisher>
+                                    </imprint>
+                                </monogr>
+                                <note>Transcription based on this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Courcelle, Pierre</author>
+                                    <title level="m">La consolation de philosophie dans la tradition
+                                        littéraire</title>
+                                    <imprint>
+                                        <publisher>Études Augustiniennes</publisher>
+                                        <pubPlace>Paris</pubPlace>
+                                        <date>1967</date>
+                                        <biblScope unit="pp">esp. 403-404</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=boethius+commentaries">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205510">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="7">
+                        <locus from="92v" to="92v" facs="p21198-zz002950mc"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=183">f.
+                            92r</locus>
+                        <title>Paulinus Aquileiensis, De nativitate domini [1-9]</title>
+                        <incipit>Gloriam deo in excelsis hodie caelestis primum cecinit ... </incipit>
+                        <explicit>... gregem iugiles o quam beati.</explicit>
+
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Barrett, Sam</author>
+                                    <title level="a">Two New Sources for the Poetry of Paulinus of
+                                        Aquileia</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Paolino d'Aquileia e il contributo italiano
+                                        all'Europa carolingia</title>
+                                    <editor>P. Chiesa</editor>
+                                    <imprint>
+                                        <pubPlace>Udine</pubPlace>
+                                        <publisher>Forum</publisher>
+                                        <date>2003</date>
+                                        <biblScope unit="pp">42</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Diplomatic edition, using this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Paulinus</author>
+                                    <title level="m">De nativitate domini nostri iesu christi</title>
+                                    <title level="s">MGH Poetae</title>
+                                    <editor>E. Dümmler</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">1</biblScope>
+                                        <publisher>Weidmann</publisher>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <date>1881</date>
+                                        <biblScope unit="pp">144-145 (s. 9)</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://www.mgh.de/dmgh/resolving/MGH_Poetae_1_S._144">
+                                    dMGH</ref></note>
+                                <note>Critical edition, but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=paulinus+aquileia+poetry">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e638940">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="8">
+                        <locus from="93r" to="99r" facs="p21198-zz002950nw"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=184">f.
+                            93r-99r</locus>
+                        <title>Boethius, De trinitate / Quomodo trinitas [Opusculum Sacrum I]</title>
+                        <rubric>Opus anicii manlii seuerini boetii ex cons. ord. patric. Orditur de
+                            sancta trinitate domino Patri symmacho boetius</rubric>
+                        <incipit>Inuestigatam diutissime questionem quantum nostrae mentis igniculum
+                            lux diuina dignata est...</incipit>
+                        <explicit>... quantum inbecillitas subtrahit uota supplebunt.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 890</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">De sancta trinitate</title>
+                                    <title level="m">Boethius: De consolatione philosophiae;
+                                        opuscula theologica</title>
+                                    <title level="s">Bibliotheca Teubneriana</title>
+                                    <editor>C. Moreschini</editor>
+                                    <imprint>
+                                        <publisher>K.G. Saur</publisher>
+                                        <pubPlace>Munich and Leipzig</pubPlace>
+                                        <date>2005</date>
+                                        <biblScope unit="pp">165-181</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">De Trinitate</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <editor>E.K. Rand</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">2-30</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Not a critical edition, but based on a independent collation
+                                    of MSS by Rand</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">De sancta trinitate</title>
+                                    <title level="m">Anicii Manlii Severini Boetii: Philosophiae
+                                        consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">149-163</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PA149">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">De trinitate</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>H.F. Stewart, E.K. Rand and S.J. Tester</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">3-31</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - De Trinitate%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205490">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="9">
+                        <locus from="99r" to="100r" facs="p21198-zz0029512k"
+                            target="https://digital.library.ucla.edu/catalog/xds49200zz-89112?cv=196">f.
+                            99r-100r</locus>
+                        <title>Boethius, Utrum Pater et Filius [Opusculum Sacrum II]</title>
+                        <rubric>Anicii manlii seuerini boetii ex cons. ordi. ex mag. off. ad
+                            iohannem diaconum utrum pater et filius et spiritus sanctus de
+                            diuinitate substantialiter praedicentur</rubric>
+                        <incipit>Quaero an pater et filius et spiritus sanctus de diuinitate
+                            substantialiter praedicentur ...</incipit>
+                        <explicit>... et fidem si poteris rationemque coniunge.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 891</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">Utrum pater et filius</title>
+                                    <title level="m">Boethius: De consolatione philosophiae;
+                                        opuscula theologica</title>
+                                    <title level="s">Bibliotheca Teubneriana</title>
+                                    <editor>C. Moreschini</editor>
+                                    <imprint>
+                                        <publisher>K.G. Saur</publisher>
+                                        <pubPlace>Munich and Leipzig</pubPlace>
+                                        <date>2005</date>
+                                        <biblScope unit="pp">182-185</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Utrum pater et filius</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <editor>E.K. Rand</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">32-36</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Not a critical edition, but based on a independent collation
+                                    of MSS by Rand</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">Utrum pater et filius</title>
+                                    <title level="m">Anicii Manlii Severini Boetii: Philosophiae
+                                        consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">164-167</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PA164">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Utrum pater et filius</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>H.F. Stewart, E.K. Rand and S.J. Tester</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">33-37</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - Opuscula sacra%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205490">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="10">
+                        <locus from="100r" to="103r" facs="p21198-zz0029514m">f. 100r-103r</locus>
+                        <title>Boethius, Quomodo Substantiae / De hebdomadibus [Opusculum Sacrum
+                            III]</title>
+                        <rubric>Item eiusdem ad eundem quomodo substantiae in eo quod si\n/t bonae
+                            sint cum non sint substantialia bona</rubric>
+                        <incipit>Postulas ut ex ebdomadibus nostris eius quaetionis obscuritatem ...</incipit>
+                        <explicit>... iusta alia ad aliud omnia bona;</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 892</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">Quomodo substantiae</title>
+                                    <title level="m">Boethius: De consolatione philosophiae;
+                                        opuscula theologica</title>
+                                    <title level="s">Bibliotheca Teubneriana</title>
+                                    <editor>C. Moreschini</editor>
+                                    <imprint>
+                                        <publisher>K.G. Saur</publisher>
+                                        <pubPlace>Munich and Leipzig</pubPlace>
+                                        <date>2005</date>
+                                        <biblScope unit="pp">186-194</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Quomodo substantiae</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <editor>E.K. Rand</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">38-50</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Not a critical edition, but based on a independent collation
+                                    of MSS by Rand</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">Quomodo substantiae bonae sint</title>
+                                    <title level="m">Anicii Manlii Severini Boetii: Philosophiae
+                                        consolationis libri quinque</title>
+                                    <editor>R. Peiper</editor>
+                                    <imprint>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1871</date>
+                                        <biblScope unit="pp">168-174</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=LcAVAAAAYAAJ&amp;pg=PA168">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">Quomodo substantiae</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>H.F. Stewart, E.K. Rand and S.J. Tester</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">74</biblScope>
+                                        <publisher>Harvard UP</publisher>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <date>1990</date>
+                                        <biblScope unit="pp">39-51</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - De hebdomadibus%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205490">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="11">
+                        <locus from="103v" to="106r" facs="p21198-zz002951c7">f. 103v-106r</locus>
+                        <title>Walafridus Strabo, De carminum generibus summa</title>
+                        <rubric>Dissyllabi iiii exemplis quadruplicibus comprehensi</rubric>
+                        <incipit>Pirrichius  Bene colit homo deum. ...</incipit>
+                        <explicit>... Per sęcula tutelam.</explicit>
+
+                        <listBibl>
+                            <head>Edition</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Berschin, Walter, and Tino Licht</author>
+                                    <title level="a">Metrorum iure peritus: Walahfrid Strabo als
+                                        Metriklehrer</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Mittellateinisches Jahrbuch</title>
+                                    <imprint>
+                                        <biblScope unit="vol">44</biblScope>
+                                        <biblScope unit="pp">380-385</biblScope>
+                                        <date>2009</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://archiv.ub.uni-heidelberg.de/volltextserver/volltexte/2011/11647/pdf/Licht_2009_Walahfrid.pdf">University
+                                    of Heidelberg</ref></note>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    N (but incorrectly identifying the shelfmark as IV.G.69)</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Huemer, Joh.</author>
+                                    <title level="a">Zu Walahfrid Strabo</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Neues Archiv der Gesellschaft für Ältere
+                                        Deutsche Geschichtskunde</title>
+                                    <imprint>
+                                        <biblScope unit="vol">10</biblScope>
+                                        <biblScope unit="pp">167-8</biblScope>
+                                        <date>1885</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://resolver.sub.uni-goettingen.de/purl?PPN345858530_0010">
+                                    DigiZeitschriften</ref></note>
+                                <note>Partial transcription based on St Gall cod. 831</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=walahfrid+metrics">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e836590">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="12">
+                        <locus from="106r" to="106r" facs="p21198-zz002951jt">f. 106r</locus>
+                        <title>[Argumentum anonymi de metris]</title>
+                        <incipit>Ęqua divisio est si .ii. ad .ii. ...</incipit>
+                        <explicit>... semitonium dicitur.</explicit>
+                        <!-- This seems to be some discussion of the previous item; but I cannot
+                        find a positive ID yet, nor is it in either of the two editions for the
+                        previous item RMP 23/3/12 -->
+
+                    </msItem>
+
+                    <msItem n="13">
+                        <locus from="106v" to="106v" facs="p21198-zz002951kb">f. 106v</locus>
+                        <title>[Anonymus, Versus]</title>
+                        <incipit>Post erratus et excessus atque neglegentias...</incipit>
+                        <explicit>... Antecedunt moetas omnes conlaudentur numero</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>Schaller-Könsgen 12197</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Edition</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Schaller, Dieter</author>
+                                    <title level="a">Frühmittelalterliche lateinische Dichtung in
+                                        einer ehemals St. Galler Handschrift</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift für deutsches Altertum und deutsche
+                                        Literatur</title>
+                                    <imprint>
+                                        <biblScope unit="vol">93/4</biblScope>
+                                        <biblScope unit="pp">290</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref target="http://www.jstor.org/stable/20655207?seq=19">
+                                    JSTOR</ref></note>
+                                <note>Transcription based on this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <biblStruct>
+                                <monogr>
+                                    <author>D. Schaller and E. Könsgen [= Schaller-Könsgen]</author>
+                                    <title level="m">Initia carminum latinorum saeculo undecimo
+                                        antiquiorum</title>
+                                    <imprint>
+                                        <date>1977</date>
+                                        <pubPlace>Göttingen</pubPlace>
+                                        <publisher>Vandenhoeck &amp; Ruprecht</publisher>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="14">
+                        <locus from="107r" to="178v" facs="p21198-zz002951mv">f. 107r-178v</locus>
+                        <title>Boethius, De institutione arithmetica</title>
+                        <rubric>Domno Patri symmacho boetius</rubric>
+                        <incipit>In dandis accipiendisque muneribus officia inter eos praecipua\e/
+                            ...</incipit>
+                        <explicit>... (178r) subter exemplar subiecimus ... (179v) explicit
+                            institutionis arithmeticae Liber secundus feliciter</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 879</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">Institutio Arithmetica</title>
+                                    <title level="m">Boèce: Institution Arithmétique</title>
+                                    <title level="s">Collection des Universités de France, Série
+                                        Latine</title>
+                                    <editor>J.-Y. Guillaumin</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">329</biblScope>
+                                        <publisher>Les Belles Lettres</publisher>
+                                        <pubPlace>Paris</pubPlace>
+                                        <date>2002</date>
+                                        <biblScope unit="pp">1-178</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition, but does not use this manuscript. Includes
+                                    French translation</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="m">De institutione arithmetica</title>
+                                    <title level="s">CCSL</title>
+                                    <editor>H. Oosthout and J. Schilling</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">94A</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>1999</date>
+                                        <biblScope unit="pp">3-224</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition, but does not use this manuscript</note>
+                            </biblStruct>
+
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">De institutione arithmetica</title>
+                                    <title level="m">Anicii Manlii Torquati Severini Boetii De
+                                        Institutione Arithmetica</title>
+                                    <editor>G. Friedlein</editor>
+                                    <imprint>
+                                        <biblScope unit="vol"></biblScope>
+                                        <publisher>Teubner</publisher>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <date>1867</date>
+                                        <biblScope unit="pp">3-173</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=VA_WAAAAMAAJ&amp;pg=PA3">Google
+                                    Books</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Boethius</author>
+                                    <title level="a">De institutione arithmetica</title>
+                                    <title level="m">Boethian number theory: a translation of the De
+                                        institutione arithmetica</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>M. Masi</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <publisher>Rodopi</publisher>
+                                        <pubPlace>Amsterdam</pubPlace>
+                                        <date>1983</date>
+                                        <biblScope unit="pp">66-188</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>English translation of Friedlein's Latin text</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Boèce: Institution Arithmétique</title>
+                                    <title level="s">Collection des Universités de France, Série
+                                        Latine</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>J.-Y. Guillaumin</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">329</biblScope>
+                                        <publisher>Les Belles Lettres</publisher>
+                                        <pubPlace>Paris</pubPlace>
+                                        <date>2002</date>
+                                        <biblScope unit="pp">1-178</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>French translation with facing-page critical edition of Latin
+                                    text</note>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Boethius, philosopher - De institutione arithmetica%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e205490">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="15">
+                        <locus from="179r" to="179r" facs="p21198-zz002956kr">f. 179r, l. 1-16</locus>
+                        <title>Beda venerabilis, De natura rerum [c. 36]</title>
+                        <rubric>Signa tempestatum uel serenitatis</rubric>
+                        <incipit>Sol in ortu suo maculosus uel sub nube latens pluuialem diem
+                            praesagit ...</incipit>
+                        <explicit>... discussae caelum aperiunt.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 1343</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Beda</author>
+                                    <title level="a">De natura rerum</title>
+                                    <title level="m">Opera didascalica</title>
+                                    <title level="s">CCSL</title>
+                                    <editor>C.W. Jones</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">123A</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>1975</date>
+                                        <biblScope unit="pp">222-23</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Beda</author>
+                                    <title level="m">De natura rerum liber</title>
+                                    <title level="s">PL</title>
+                                    <imprint>
+                                        <biblScope unit="vol">90</biblScope>
+                                        <biblScope unit="col">254A-255A</biblScope>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Bede: On the Nature of Things and On Times</title>
+                                    <title level="s">Translated Texts for Historians</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>C.B. Kendall and F. Wallis</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <biblScope unit="vol">56</biblScope>
+                                        <publisher>Liverpool UP</publisher>
+                                        <pubPlace>Liverpool</pubPlace>
+                                        <date>2010</date>
+                                        <biblScope unit="pp">93-4</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=YQjHoQAZKX0C&amp;pg=PA93">Google
+                                    Books</ref></note>
+                            </biblStruct>
+                        </listBibl>
+
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Bede, the Venerable, scholar - De natura rerum%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e139260">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="16">
+                        <locus from="179r" to="179r" facs="p21198-zz002956kr">f. 179r, l. 17-27</locus>
+                        <title>Publius Vergilius Maro, Georgica [I.438-449; I.427-435]</title>
+                        <rubric>Vir[gilius]</rubric>
+                        <incipit>Sol quoque et exoriens et cum se condet in undas ...</incipit>
+                        <explicit>... ad mensem pluuia uentisque carebunt.</explicit>
+
+                        <listBibl>
+                            <head>Edition</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Publius Vergilius Maro</author>
+                                    <title level="a">Georgica</title>
+                                    <title level="m">P. Vergili Maronis Opera</title>
+                                    <title level="s">Oxford Classical Texts</title>
+                                    <editor>R.A.B. Mynors</editor>
+                                    <imprint>
+                                        <publisher>OUP</publisher>
+                                        <pubPlace>Oxford</pubPlace>
+                                        <date>1969</date>
+                                        <biblScope unit="pp">42-3</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://www.scribd.com/doc/37940067/Opera-Virgilio#page=58">
+                                    Scribd</ref></note>
+                                <note>Critical edition but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Virgil</author>
+                                    <title level="a">Georgic I</title>
+                                    <title level="m">The Georgics of Virgil</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>J. Rhoades</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <publisher>Kegan Pual, Trench, Trübner &amp; Co.</publisher>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1891</date>
+                                        <biblScope unit="pp">24-26</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=hqQNAAAAIAAJ&amp;pg=PA24">Google
+                                    Books</ref></note>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Virgil (P. Vergilius Maro), ancient poet - Georgica%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e828900">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="17">
+                        <locus from="179v" to="204r" facs="p21198-zz002956m8">f. 179v-204r</locus>
+                        <title>Aurelius Prudentius Clemens, Psychomachia</title>
+                        <rubric>Incipit Praefatio sequentis operis</rubric>
+                        <incipit>Senex fidelis prima credendi uia est ...</incipit>
+                        <explicit>... Aeternum solio diues sapientia regnet.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>CPL 1441</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Prudentius</author>
+                                    <title level="m">Psychomachia</title>
+                                    <title level="s">CCSL</title>
+                                    <editor>M.P. Cunningham</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">126</biblScope>
+                                        <publisher>Brepols</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>1966</date>
+                                        <biblScope unit="pp">149-181</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition using this manuscript, reporting it by siglum
+                                    Y</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Prudentius</author>
+                                    <title level="m">Psychomachia</title>
+                                    <title level="s">CSEL</title>
+                                    <editor>J. Bergman</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">61</biblScope>
+                                        <publisher>Hoelder-Pichler-Tempsky</publisher>
+                                        <pubPlace>Turnhout</pubPlace>
+                                        <date>1926</date>
+                                        <biblScope unit="pp">167-211</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition, but does not use this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Prudentius</author>
+                                    <title level="m">Psychomachia</title>
+                                    <title level="s">PL</title>
+                                    <imprint>
+                                        <biblScope unit="vol">60</biblScope>
+                                        <biblScope unit="col">11A-90A</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=za1DE6xQC_gC&amp;pg=PT17">Google
+                                    Books</ref></note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Prudentius</author>
+                                    <title level="a">The Fight for Mansoul</title>
+                                    <title level="m">Prudentius</title>
+                                    <title level="s">Loeb Classical Library</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>H.J. Thomson</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <publisher>Heinemann</publisher>
+                                        <pubPlace>London</pubPlace>
+                                        <date>1949</date>
+                                        <biblScope unit="pp">275-343</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://archive.org/stream/prudentiuswithen01pruduoft#page/274/mode/2up">Internet
+                                    Archive</ref></note>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=%22Prudentius, Aurelius Clemens, poet%22">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e706020">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="18">
+                        <locus from="182v" to="204r" facs="p21198-zz002956tc">f. 182v-204r</locus>
+                        <title>[Glossae super Prudentii Psychomachia]</title>
+
+                        <listBibl>
+                            <head>Partial Edition</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Starck, Taylor</author>
+                                    <title level="a">Unpublished Old High German Glosses to Boethius
+                                        and Prudentius</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Mediaeval Studies in Honor of Jeremiah Denis
+                                        Matthias Ford</title>
+                                    <editor>U.T. Holmes and A.J. Denomy</editor>
+                                    <imprint>
+                                        <biblScope unit="pp">314</biblScope>
+                                        <date>1948</date>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <publisher>Harvard UP</publisher>
+                                    </imprint>
+                                </monogr>
+                                <note>Transcription based on this manuscript</note>
+                            </biblStruct>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>R. Bergmann and S. Stricker</author>
+                                    <title level="m">Katalog der althochdeutschen und altsächsischen
+                                        Glossenhandschriften</title>
+                                    <imprint>
+                                        <biblScope unit="vol">3</biblScope>
+                                        <biblScope unit="pp">1363-65 (no. 713)</biblScope>
+                                        <date>2005</date>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <publisher>de Gruyter</publisher>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=vTbN4z3ZlOIC&amp;lpg=PA1363&amp;pg=PA1363">Google
+                                    Books</ref></note>
+                            </biblStruct>
+                        </listBibl>
+
+                    </msItem>
+
+
+                    <msItem n="19">
+                        <locus from="204v" to="206v" facs="p21198-zz002958b3">f. 204v-206v</locus>
+                        <title>[Glossarium latinum et germanicum super Prudentii Psychomachia]</title>
+                        <incipit>Agresti rustico ...</incipit>
+                        <explicit>... Ualli crebin.</explicit>
+
+
+                        <listBibl>
+                            <head>Partial Edition</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Starck, Taylor</author>
+                                    <title level="a">Unpublished Old High German Glosses to Boethius
+                                        and Prudentius</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Mediaeval Studies in Honor of Jeremiah Denis
+                                        Matthias Ford</title>
+                                    <editor>U.T. Holmes and A.J. Denomy</editor>
+                                    <imprint>
+                                        <biblScope unit="pp">314-15</biblScope>
+                                        <date>1948</date>
+                                        <pubPlace>Cambridge MA</pubPlace>
+                                        <publisher>Harvard UP</publisher>
+                                    </imprint>
+                                </monogr>
+                                <note>Transcription based on this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>R. Bergmann and S. Stricker</author>
+                                    <title level="m">Katalog der althochdeutschen und altsächsischen
+                                        Glossenhandschriften</title>
+                                    <imprint>
+                                        <biblScope unit="vol">3</biblScope>
+                                        <biblScope unit="pp">1363-65 (no. 713)</biblScope>
+                                        <date>2005</date>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <publisher>de Gruyter</publisher>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=vTbN4z3ZlOIC&amp;lpg=PA1363&amp;pg=PA1363">Google
+                                    Books</ref></note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Stricker, Stefanie</author>
+                                    <title level="a">Prudentius</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="m">Die deutsche Literatur des Mittelalters:
+                                        Verfasserlexikon</title>
+                                    <editor>C. Stöllinger-Löser</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">11/4</biblScope>
+                                        <biblScope unit="pp">1272-77</biblScope>
+                                        <date>2003</date>
+                                        <pubPlace>Berlin</pubPlace>
+                                        <publisher>de Gruyter</publisher>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=prudentius+glosses">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e429130">
+                                LexMA</ref></note>
+                            </bibl>
+
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="20">
+                        <locus from="207r" to="207v" facs="p21198-zz002958hp">f. 207r-v</locus>
+                        <title>[Hymnorum initia diversorum, cum neumis]</title>
+                        <incipit>Ante sęcula et mundi principium tu pater ...</incipit>
+                        <explicit>... nunc festinus ac celera uelociter</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>Schaller-Könsgen 878, 1126, 5702, 1352, 598, 11062, 1789, 458,
+                                236, 11889</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Edition or Description</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Schaller, Dieter</author>
+                                    <title level="a">Frühmittelalterliche lateinische Dichtung in
+                                        einer ehemals St. Galler Handschrift</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift für deutsches Altertum und deutsche
+                                        Literatur</title>
+                                    <imprint>
+                                        <biblScope unit="vol">93/4</biblScope>
+                                        <biblScope unit="pp">274-277</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref target="http://www.jstor.org/stable/20655207?seq=3">JSTOR</ref></note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>D. Schaller and E. Könsgen [= Schaller-Könsgen]</author>
+                                    <title level="m">Initia carminum latinorum saeculo undecimo
+                                        antiquiorum</title>
+                                    <imprint>
+                                        <date>1977</date>
+                                        <pubPlace>Göttingen</pubPlace>
+                                        <publisher>Vandenhoeck &amp; Ruprecht</publisher>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=neumes">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e623850">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="21">
+                        <locus from="208r" to="231v" facs="p21198-zz002958kq">f. 208r-231v</locus>
+                        <title>Martianus Minneus Felix Capella, De Nuptiis Philologiae et Mercurii
+                            [IV.327 - IV.423]</title>
+                        <rubric>Liber martiani minei felicis capellae afri cartiginiensis de arte
+                            dialectica incipit</rubric>
+                        <incipit>Haec quoque contortis stringens effamina nodis ...</incipit>
+                        <explicit>... pallas nutum maiugenae festinantis interuenit. Finit ΑΜΗΝ</explicit>
+
+                        <listBibl>
+                            <head>Editions</head>
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Martianus Capella</title>
+                                    <title level="s">Bibliotheca Scriptorum Graecorum et Romanorum
+                                        Teubneriana</title>
+                                    <editor>J. Willis</editor>
+                                    <imprint>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <publisher>Teubner</publisher>
+                                        <date>1983</date>
+                                        <biblScope unit="pp">105-145</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Critical edition, but does not use this manuscript</note>
+                            </biblStruct>
+
+                            <biblStruct>
+                                <monogr>
+                                    <title level="m">Martianus Capella</title>
+                                    <editor>F. Eyssenhardt</editor>
+                                    <imprint>
+                                        <pubPlace>Leipzig</pubPlace>
+                                        <publisher>Teubner</publisher>
+                                        <date>1866</date>
+                                        <biblScope unit="pp">98-136</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=NR4VAAAAQAAJ&amp;pg=PA98">Google
+                                    Books</ref></note>
+                                <note>Critical edition, but does not use this manuscript</note>
+                            </biblStruct>
+
+                        </listBibl>
+                        <listBibl>
+                            <head>Translation</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>Martianus Capella</author>
+                                    <title level="m">Martianus Capella and the Seven Liberal Arts:
+                                        the Marriage of Philology and Mercury</title>
+                                    <respStmt>
+                                        <resp>trans.</resp>
+                                        <name>W. Stahl and R. Johnson</name>
+                                    </respStmt>
+                                    <imprint>
+                                        <pubPlace>New York</pubPlace>
+                                        <publisher>Columbia</publisher>
+                                        <date>1977</date>
+                                        <biblScope unit="vol">2</biblScope>
+                                        <biblScope unit="pp">106-153</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note><ref
+                                        target="http://books.google.com/books?id=nZ-Z9eI6dXwC&amp;lpg=PP1&amp;pg=PA106">Google
+                                    Books</ref></note>
+                            </biblStruct>
+
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=martianus+capella">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e607400">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="22">
+                        <locus from="208r" to="231v" facs="p21198-zz002958kq">f. 208r-231v</locus>
+                        <title>[Glossae et annotationes ad Martianum Capellam] </title>
+                        <note>Some of these glosses/annotations are taken from the Dunchad/Martin
+                            tradition, but many not: (e.g.) 'sors et patrimonium' on 208r is from
+                            Paul/Festus, De Significatu Verborum (ed. Lindsay, 1913, p. 381)</note>
+
+                        <listBibl>
+                            <head>Partial Editions</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>[Dunchad aut Martinus (?)]</author>
+                                    <title level="m">Glossae in Martianum</title>
+                                    <title level="s">Philological Monographs published by the
+                                        American Philological Association</title>
+                                    <editor>C.E. Lutz</editor>
+                                    <imprint>
+                                        <biblScope unit="vol">12</biblScope>
+                                        <publisher>American Philological Association</publisher>
+                                        <pubPlace>Lancaster</pubPlace>
+                                        <date>1944</date>
+                                        <biblScope unit="pp">15-35</biblScope>
+                                    </imprint>
+                                </monogr>
+                                <note>Editor notes that this Naples MS contains 'twelve interlinear
+                                    glosses taken from Dunchad' (p. 60), but does not use this MS in
+                                    her edition</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+                            <bibl>
+                                <note>For further bibliography, see: <ref
+                                        target="http://apps.brepolis.net/bmb/search.cfm?action=search_advanced_result&amp;startrow=1&amp;allindexterms=martianus+glosses">
+                                IMB</ref> and <ref
+                                        target="http://apps.brepolis.net/Lexiema/test/LinkingIn.aspx?id=e607420">
+                                LexMA</ref></note>
+                            </bibl>
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="23">
+                        <locus from="231v" to="233v" facs="p21198-zz00295b81">f. 231v-233v</locus>
+                        <title>[Hymni versusque diversi, cum neumis]</title>
+                        <incipit>Terrcio in flore mundus ...</incipit>
+                        <explicit>... coronam reportamus.</explicit>
+
+                        <listBibl>
+                            <head>Index Reference Numbers</head>
+                            <bibl>
+                                <note>Schaller-Könsgen 16306, 167, 2235, 16570, 2518</note>
+                            </bibl>
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Edition / Description</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Schaller, Dieter</author>
+                                    <title level="a">Frühmittelalterliche lateinische Dichtung in
+                                        einer ehemals St. Galler Handschrift</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">Zeitschrift für deutsches Altertum und deutsche
+                                        Literatur</title>
+                                    <imprint>
+                                        <biblScope unit="vol">93/4</biblScope>
+                                        <biblScope unit="pp">277-286</biblScope>
+                                        <date>1964</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref target="http://www.jstor.org/stable/20655207?seq=6">JSTOR</ref></note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                        <listBibl>
+                            <head>Bibliography</head>
+
+                            <biblStruct>
+                                <monogr>
+                                    <author>D. Schaller and E. Könsgen [= Schaller-Könsgen]</author>
+                                    <title level="m">Initia carminum latinorum saeculo undecimo
+                                        antiquiorum</title>
+                                    <imprint>
+                                        <date>1977</date>
+                                        <pubPlace>Göttingen</pubPlace>
+                                        <publisher>Vandenhoeck &amp; Ruprecht</publisher>
+                                    </imprint>
+                                </monogr>
+                            </biblStruct>
+                        </listBibl>
+
+                        <msItem n="23_1">
+                            <locus from="231v" to="231v" facs="p21198-zz00295b81">f. 231v</locus>
+                            <title>[Paulinus Aquiliensis], Versus de Iacob et Ioseph</title>
+                            <incipit>Tertio in flore mundus ...</incipit>
+                            <explicit>... diffamari populus.</explicit>
+
+                            <listBibl>
+                                <head>Index Reference Numbers</head>
+                                <bibl>
+                                    <note>Schaller-Könsgen 16306</note>
+                                </bibl>
+                            </listBibl>
+
+                            <listBibl>
+                                <head>Edition</head>
+
+                                <biblStruct>
+                                    <monogr>
+                                        <title level="m">Versus de Iacob et Ioseph</title>
+                                        <title level="s">MGH Poetae</title>
+                                        <editor>K. Strecker</editor>
+                                        <imprint>
+                                            <biblScope unit="vol">4/2</biblScope>
+                                            <publisher>Weidmann</publisher>
+                                            <pubPlace>Berlin</pubPlace>
+                                            <date>1923</date>
+                                            <biblScope unit="pp">462</biblScope>
+                                        </imprint>
+                                    </monogr>
+                                    <note><ref
+                                            target="http://www.mgh.de/dmgh/resolving/MGH_Poetae_4,2.3_S._462">
+                                        dMGH</ref></note>
+                                    <note>Critical edition, but does not use this manuscript</note>
+                                </biblStruct>
+                            </listBibl>
+
+                        </msItem>
+
+                        <msItem n="23_2">
+                            <locus from="231v" to="232r" facs="p21198-zz00295b9j">f. 232r, 231v</locus>
+                            <title>[Hymnus de Psalmis quindecim Canticorum Graduum]</title>
+                            <incipit>Ad dominum clamaueram ...</incipit>
+                            <explicit>... possidere eximia.</explicit>
+
+                            <listBibl>
+                                <head>Index Reference Numbers</head>
+                                <bibl>
+                                    <note>Schaller-Könsgen 167</note>
+                                </bibl>
+                            </listBibl>
+
+                            <listBibl>
+                                <head>Edition</head>
+
+                                <biblStruct>
+                                    <monogr>
+                                        <title level="m">Hymnus de Psalmis quindecim Canticorum
+                                            Graduum</title>
+                                        <title level="s">Analecta Hymnica</title>
+                                        <editor>G.M. Dreves &amp; C. Blume</editor>
+                                        <imprint>
+                                            <biblScope unit="vol">51</biblScope>
+                                            <publisher>O.R. Reisland</publisher>
+                                            <pubPlace>Leipzig</pubPlace>
+                                            <date>1908</date>
+                                            <biblScope unit="pp">293-4</biblScope>
+                                        </imprint>
+                                    </monogr>
+                                    <note><ref
+                                            target="http://books.google.com/books?id=RCcPAAAAIAAJ&amp;pg=PA293">Google
+                                        Books</ref></note>
+                                    <note>Critical edition, but does not use this manuscript</note>
+                                </biblStruct>
+                            </listBibl>
+
+                        </msItem>
+
+                        <msItem n="23_3">
+                            <locus from="232v" to="232v" facs="p21198-zz00295bb2">f. 232v</locus>
+                            <title>Christe salus mundi</title>
+                            <incipit>Christe salus mundi ...</incipit>
+                            <explicit>... suggessit credere christo.</explicit>
+
+                            <listBibl>
+                                <head>Index Reference Numbers</head>
+                                <bibl>
+                                    <note>Schaller-Könsgen 2235</note>
+                                </bibl>
+                            </listBibl>
+
+                            <listBibl>
+                                <head>Edition</head>
+
+
+                                <biblStruct>
+                                    <analytic>
+                                        <author>Schaller, Dieter</author>
+                                        <title level="a">Frühmittelalterliche lateinische Dichtung
+                                            in einer ehemals St. Galler Handschrift</title>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">Zeitschrift für deutsches Altertum und
+                                            deutsche Literatur</title>
+                                        <imprint>
+                                            <biblScope unit="vol">93/4</biblScope>
+                                            <biblScope unit="pp">280</biblScope>
+                                            <date>1964</date>
+                                        </imprint>
+                                    </monogr>
+                                    <note><ref target="http://www.jstor.org/stable/20655207?seq=9">
+                                        JSTOR</ref></note>
+                                </biblStruct>
+
+                            </listBibl>
+
+                        </msItem>
+
+                        <msItem n="23_4">
+                            <locus from="232v" to="232v" facs="p21198-zz00295bb2">f. 232v</locus>
+                            <title>Versus de Syllogismis</title>
+                            <rubric>Uersus de syllogismis</rubric>
+                            <incipit>Tu quicumque uelis uerum ...</incipit>
+                            <explicit>... increscere quartum.</explicit>
+
+                            <listBibl>
+                                <head>Index Reference Numbers</head>
+                                <bibl>
+                                    <note>Schaller-Könsgen 16570</note>
+                                </bibl>
+                            </listBibl>
+
+                            <listBibl>
+                                <head>Edition</head>
+
+
+                                <biblStruct>
+                                    <analytic>
+                                        <author>Schaller, Dieter</author>
+                                        <title level="a">Frühmittelalterliche lateinische Dichtung
+                                            in einer ehemals St. Galler Handschrift</title>
+                                    </analytic>
+                                    <monogr>
+                                        <title level="j">Zeitschrift für deutsches Altertum und
+                                            deutsche Literatur</title>
+                                        <imprint>
+                                            <biblScope unit="vol">93/4</biblScope>
+                                            <biblScope unit="pp">281</biblScope>
+                                            <date>1964</date>
+                                        </imprint>
+                                    </monogr>
+                                    <note><ref target="http://www.jstor.org/stable/20655207?seq=10">
+                                        JSTOR</ref></note>
+                                </biblStruct>
+
+                            </listBibl>
+
+                        </msItem>
+
+                        <msItem n="23_5">
+                            <locus from="233r" to="233v" facs="p21198-zz00295bck">f. 233r-v</locus>
+                            <title>De sancto Paulo</title>
+                            <incipit>Concurrite huc populi et insulę ...</incipit>
+                            <explicit>... coronam reportemus.</explicit>
+
+                            <listBibl>
+                                <head>Index Reference Numbers</head>
+                                <bibl>
+                                    <note>Schaller-Könsgen 2518</note>
+                                </bibl>
+                            </listBibl>
+
+                            <listBibl>
+                                <head>Edition</head>
+
+                                <biblStruct>
+                                    <monogr>
+                                        <title level="m">De sancto Paulo</title>
+                                        <title level="s">Analecta Hymnica</title>
+                                        <editor>G.M. Dreves &amp; C. Blume</editor>
+                                        <imprint>
+                                            <biblScope unit="vol">50</biblScope>
+                                            <publisher>O.R. Reisland</publisher>
+                                            <pubPlace>Leipzig</pubPlace>
+                                            <date>1907</date>
+                                            <biblScope unit="pp">276-7</biblScope>
+                                        </imprint>
+                                    </monogr>
+                                    <note><ref
+                                            target="http://books.google.com/books?id=DioPAAAAIAAJ&amp;pg=PA276">Google
+                                        Books</ref></note>
+                                    <note>Critical edition, but does not use this manuscript</note>
+                                </biblStruct>
+                            </listBibl>
+
+
+                        </msItem>
+
+                    </msItem>
+
+                    <msItem n="24">
+                        <locus from="234r" to="234r" facs="p21198-zz00295bfm">f. 234r</locus>
+                        <title>[Anonymus, Versus de Categoriis]</title>
+                        <incipit>Proloquium incipiet quo pars ...[l. 13]</incipit>
+                        <explicit>... aspice formas.</explicit>
+                        <note>Same text is found in St Gall cod. 64, p. 408-409</note>
+
+                        <listBibl>
+                            <head>Edition</head>
+
+                            <biblStruct>
+                                <analytic>
+                                    <author>Turner, William</author>
+                                    <title level="a">Mnemonic Verses in a Ninth Century MS.: A
+                                        Contribution to the History of Logic</title>
+                                </analytic>
+                                <monogr>
+                                    <title level="j">The Philosophical Review</title>
+                                    <imprint>
+                                        <biblScope unit="vol">16</biblScope>
+                                        <biblScope unit="pp">522-525</biblScope>
+                                        <date>1907</date>
+                                    </imprint>
+                                </monogr>
+                                <note><ref target="http://www.jstor.org/stable/2177234?seq=4">JSTOR</ref></note>
+                                <note>Edited from St Gall cod. 64</note>
+                            </biblStruct>
+
+                        </listBibl>
+
+                    </msItem>
+
+                    <msItem n="25">
+                        <locus from="234v" to="236r" facs="p21198-zz00295bg4">f. 234v-236r</locus>
+                        <title>[Excerpta diversa de rebus astronomicis et e poetis]</title>
+                        <note>Excerpts from the 'Ex Bedae Computo', Pliny, Nonius Marcellinus,
+                            Vergil</note>
+                    </msItem>
+
+                </msContents>
+
+                <physDesc>
+                    <objectDesc form="codex">
+                        <supportDesc>
+                            <support>
+                                <material>Parchment, with paper flyleaves and leather and wood
+                                binding</material>
+                            </support>
+                            <extent>237 ff (f. 218 doubled)<dimensions unit="mm">
+                                    <height scope="all">212</height>
+                                    <width scope="all">147</width>
+                                </dimensions>
+                            </extent>
+                            <collation>
+                                <p>ff. 1-88 = I<hi rend="sup">8</hi>-XI<hi rend="sup">8</hi>; ff.
+                                89-96 = XII<hi rend="sup">4</hi>-XIII<hi rend="sup">4</hi>; ff.
+                                97-104 = XIV<hi rend="sup">8</hi>; ff. 105-110 = XV<hi rend="sup">6</hi>;
+                                ff. 111-130 = XVI<hi rend="sup">10</hi>-XVII<hi rend="sup">10</hi>;
+                                f. 131 = XVIII<hi rend="sup">1</hi>; ff. 132-195 = XIX<hi rend="sup">
+                                8</hi>-XXVI<hi rend="sup">8</hi>; ff. 196-200 = XXVII<hi rend="sup">
+                                6</hi> (wants 5); ff. 201-216 = XXVIII<hi rend="sup">8</hi>-XXIX<hi
+                                        rend="sup">8</hi>; ff. 217-226 = XXX<hi rend="sup">10</hi>;
+                                ff. 227-236 = XXXI<hi rend="sup">4</hi>-XXXII<hi rend="sup">4</hi>
+                                [Leonardi + RMP]</p>
+                            </collation>
+                        </supportDesc>
+                        <layoutDesc>
+                            <layout>Single column, usually 24 lines per page, but 26 lines per page
+                                ff. 107-178. Written area 155 x 80–105 mm [Leonardi/Bischoff]</layout>
+                        </layoutDesc>
+                    </objectDesc>
+
+
+                    <handDesc>
+                        <p>By multiple St Gall hands, perhaps 3 for the main texts. Poems sometimes
+                            in rustics, in red or black. Titles in large rustics and large red
+                            monumental capitals. Initials in red, yellow and green. Many
+                            illustrations such as the ornamented figure on 119r. Space left blank
+                            for (unrealised) images in the Prudentius (e.g. 189v), though we see
+                            sketches on 195r-v. Numerous glosses both contemporary and later, both
+                            Latin and OH German, and neumes. Many other additions, including: two
+                            lines by a south-Frankish (?) hand on 207v; 106r (s. X/XI); 233r-v (s.
+                            X); 235v (s. X). Pen trials (s. X) on 236r. [Bischoff/Leonardi/Arnese]</p>
+
+                    </handDesc>
+
+                    <additions>
+                        <p>Brownish-black ink. Dry point ruling. The first page of every quire is
+                        hair-side, and within the quires the pages of the flesh-side are always one
+                        against the other, and likewise for the hair-side. Recent numbering in
+                        arabic numerals. Nineteenth-century binding in red leather and boards. Many
+                        ownership marks from St Gall: 1r, 104r, 206v. Uncertain as to when the
+                        manuscript arrived in Naples; earliest modern bibliographical references
+                        appear in the 1930s. May appear in the 1461 catalogue of St Gall: 'H 11
+                        Boecius in pluribus et Prudencius' (Lehmann, MBKDS, p. 111.19)
+                        [Arnese/Bischoff/Leonardi/RMP] </p>
+                    </additions>
+
+                </physDesc>
+
+                <history>
+                    <origin>
+                        <origDate>s. IX ⁴∕₄ and s. IX/X [Bischoff]</origDate>
+                        <origPlace>St Gall
+                        [Bischoff]</origPlace>
+                    </origin>
+                </history>
+
+                <additional>
+                    <listBibl>
+                        <head>Codicological Bibliography</head>
+
+                        <bibl>
+                            <note> Patrizia Stoppacci, 'I Manoscritti': <ref
+                                    target="http://www.corimu.unisi.it/toolbarIntroductions.php?pagina=stoppacci">CORPUS
+                            RHYTHMORUM MUSICUM</ref></note>
+                        </bibl>
+
+                        <biblStruct>
+                            <monogr>
+                                <author>R. Bergmann and S. Stricker</author>
+                                <title level="m">Katalog der althochdeutschen und altsächsischen
+                                    Glossenhandschriften</title>
+                                <imprint>
+                                    <biblScope unit="vol">3</biblScope>
+                                    <biblScope unit="pp">1363-65 (no. 713)</biblScope>
+                                    <date>2005</date>
+                                    <pubPlace>Berlin</pubPlace>
+                                    <publisher>de Gruyter</publisher>
+                                </imprint>
+                            </monogr>
+                            <note><ref
+                                    target="http://books.google.com/books?id=vTbN4z3ZlOIC&amp;lpg=PA1363&amp;pg=PA1363">Google
+                                Books</ref></note>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <monogr>
+                                <author>B. Bischoff</author>
+                                <title level="m">Katalog der festländischen Handschriften des
+                                    neunten Jahrhunderts</title>
+                                <imprint>
+                                    <publisher>Harrassowitz Verlag</publisher>
+                                    <pubPlace>Wiesbaden</pubPlace>
+                                    <date>2004</date>
+                                    <biblScope unit="vol">2</biblScope>
+                                    <biblScope unit="number">3574</biblScope>
+                                </imprint>
+                            </monogr>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <monogr>
+                                <author>M. Passalacqua and L. Smith</author>
+                                <title level="m">Codices Boethiani</title>
+                                <imprint>
+                                    <biblScope unit="vol">3</biblScope>
+                                    <publisher>The Warburg Institute</publisher>
+                                    <pubPlace>London</pubPlace>
+                                    <date>2001</date>
+                                    <biblScope unit="pp">254-256</biblScope>
+                                </imprint>
+                            </monogr>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <monogr>
+                                <author>F. Sbordone</author>
+                                <title level="m">Manoscritti Latini non compresi nel catalogo
+                                    Iannelli</title>
+                                <title level="s">I Quaderni della biblioteca nazionale di Napoli</title>
+                                <imprint>
+                                    <biblScope unit="vol">V/3</biblScope>
+                                    <publisher>Industria Tipografica Artistica</publisher>
+                                    <pubPlace>Naples</pubPlace>
+                                    <date>1980</date>
+                                    <biblScope unit="pp">30-31</biblScope>
+                                </imprint>
+                            </monogr>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <analytic>
+                                <author>C. Leonardi</author>
+                                <title level="a">I Codici di Marziano Capella</title>
+                            </analytic>
+                            <monogr>
+                                <title level="j">Aevum</title>
+                                <imprint>
+                                    <biblScope unit="vol">34/5-6</biblScope>
+                                    <biblScope unit="pp">412-414</biblScope>
+                                    <date>1960</date>
+                                </imprint>
+                            </monogr>
+                            <note><ref
+                                    target="http://gateway.proquest.com/openurl?url_ver=Z39.88-2004&amp;res_dat=xri:pao-us:&amp;rft_dat=xri:pao:article:4009-1960-034-05-000001:2">Periodicals
+                                Archive Online</ref> (subscription required)</note>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <analytic>
+                                <author>R. Arnese</author>
+                                <title level="a">Alcuini codici inediti della biblioteca nazionale
+                                    di Napoli</title>
+                            </analytic>
+                            <monogr>
+                                <title level="j">Archivio Storico per le Province Napoletane</title>
+                                <imprint>
+                                    <biblScope unit="vol">91</biblScope>
+                                    <biblScope unit="pp">351-355</biblScope>
+                                    <date>1974</date>
+                                </imprint>
+                            </monogr>
+                        </biblStruct>
+
+                        <biblStruct>
+                            <monogr>
+                                <author>C.E. Lutz</author>
+                                <title level="m">Dunchad: Glossae in Martianum</title>
+                                <title level="s">Philological Monographs published by the American
+                                    Philological Association</title>
+                                <imprint>
+                                    <biblScope unit="vol">12</biblScope>
+                                    <publisher>American Philological Association</publisher>
+                                    <pubPlace>Lancaster</pubPlace>
+                                    <date>1944</date>
+                                    <biblScope unit="pp">60-62</biblScope>
+                                </imprint>
+                            </monogr>
+
+                        </biblStruct>
+
+                        <biblStruct>
+                            <analytic>
+                                <author>E.T. Silk</author>
+                                <title level="a">Notes on Two Neglected Manuscripts of Boethius'
+                                    Consolatio Philosophiae</title>
+                            </analytic>
+                            <monogr>
+                                <title level="j">Transactions and Proceedings of the American
+                                    Philological Association</title>
+                                <imprint>
+                                    <biblScope unit="vol">70</biblScope>
+                                    <biblScope unit="pp">352-356</biblScope>
+                                    <date>1939</date>
+                                </imprint>
+                            </monogr>
+                            <note><ref target="http://www.jstor.org/stable/283094">JSTOR</ref></note>
+                        </biblStruct>
+
+
+                    </listBibl>
+
+                </additional>
+
+            </msDesc>
+
+
+            <div type="transcription">
+                <div type="work" n="1">
+                    <ab> </ab>
+                </div>
+
+
+            </div>
+        </body>
+    </text>
+</TEI>
+
+  
