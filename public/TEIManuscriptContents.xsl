@@ -19,8 +19,7 @@
             <tr>
                 <td class="title"><xsl:value-of
                         select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository"></xsl:value-of>
-        :  
-                            <xsl:value-of
+        : <xsl:value-of
                         select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno"></xsl:value-of>
                 </td>
             </tr>
@@ -31,20 +30,22 @@
                     <!-- sub nav table for left view frame-->
                     <table width="100%" border="0" cellspacing="5" cellpadding="5">
                         <tr>
-                            <td width="33%" class="subnav_on">Contents</td>
+                            <td width="33%" class="subnav_on">Manuscript Contents</td>
                             <!--
                             href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
                             <td width="33%" class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Codicological
-        Bibliography</a>
+                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Manuscript
+        Codicological
+                                    Bibliography</a>
                             </td>
                             <!--
                             href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
                             <td class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Codicological
-        Description</a>
+                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Manuscript
+        Codicological
+                                    Description</a>
                             </td>
                         </tr>
                     </table>
@@ -79,9 +80,7 @@
                                 <h4>[<b>
                                         <xsl:value-of select="tei:workGroupHeading/tei:locus" />
                                     </b>
-        ]  
-                                        
-                                        <xsl:choose>
+        ] <xsl:choose>
                                         <xsl:when test="tei:workGroupHeading/tei:title">
                                             <xsl:value-of select="tei:workGroupHeading/tei:title" />
                                         </xsl:when>
@@ -171,7 +170,7 @@
                                         href="/stgallmss/viewFile.do?xmlstylesheet=TEIWorkBibliography.xsl&amp;count={@n}&amp;fileId={$fileId}" -->
                                                 <a
                                             style="" href="javascript:void(0)"
-                                            onclick="fetchFile('TEIWorkBibliography.xsl','{$fileId}','','{@n}');">
+                                            onclick="performXSLTTransformation('TEIWorkBibliography.xsl','{@n}');">
                                             <img src="/images/icon_bibliography.jpg" width="20"
                                                 height="20" alt="Bibliography" />
                                         </a>         <xsl:text> </xsl:text>
@@ -184,7 +183,7 @@
                                     <xsl:if
                                 test="count(tei:msItem) > 0">
                                 <a target="_top" style="border-style:none"
-                                    href="/stgallmss/viewItem.do?xmlstylesheet=TEIWorkContents.xsl&amp;count={@n}&amp;pageArk={$locusFacs}&amp;fileId={$fileId}">
+                                    href="{$locusFacs}">
                                     <img src="/images/icon_content.jpg" width="20" height="20"
                                         alt="Content" style="" />
                                 </a><xsl:text> </xsl:text>
@@ -193,8 +192,8 @@
                                     <xsl:choose>
                                 <!-- dont remember why this condition was tested -->
                                 <xsl:when test="count(tei:msItem) = 0">
-                                    <a target="_top" style=""
-                                        href="/stgallmss/viewItem.do?xmlstylesheet=TEITranscription.xsl&amp;count={@n}&amp;pageArk={$locusFacs}&amp;fileId={$fileId}">
+                                    <a target="_top" style="" href="javascript:void(0)"
+                                        onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$locusFacs}')">
                                         <img src="/images/icon_text.jpg" width="20" height="20"
                                             alt="Text" style="" />
                                     </a><xsl:text> </xsl:text>
@@ -203,7 +202,9 @@
                                 <!-- editionArk needs to be added above -->
                                 <xsl:otherwise>
                                     <a target="_top" style=""
-                                        href="/stgallmss/viewItem.do?xmlstylesheet=TEITranscription.xsl&amp;count={@n}&amp;pageArk={$locusFacs}&amp;fileId={$fileId}">
+                                        href="javascript:void(0)"
+                                        onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$locusFacs}')"
+                                    >
                                         <img src="/images/icon_text.jpg" width="20" height="20"
                                             alt="Text" style="" />
                                     </a><xsl:text> </xsl:text>

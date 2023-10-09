@@ -31,18 +31,26 @@
                     <table width="100%" border="0" cellspacing="5" cellpadding="5">
                         <tr>
                             <td width="33%" class="subnav_off">
+                                <a
+                                    href="javascript:void(0)"
+                                    onclick="performXSLTTransformation('TEIManuscriptContents.xsl');"
+                                >
+        Manuscript Contents</a>
+                            </td><!--
+                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
+                            <td width="33%"
+                                class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptContents.xsl','{$fileId}');">
-        Contents</a>
+                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">
+        Manuscript Codicological
+                                    Bibliography</a>
                             </td>
-                            <td width="33%" class="subnav_off">
+                            <!--
+                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
+                            <td
+                                class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptBiblio.xsl','{$fileId}');">Codicological
-        Bibliography</a>
-                            </td>
-                            <td class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptDesc.xsl','{$fileId}','{tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}');">Codicological
+                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Manuscript
         Description</a>
                             </td>
                         </tr>

@@ -20,8 +20,7 @@
             <tr>
                 <td class="title"><xsl:value-of
                         select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository"></xsl:value-of>
-        :  
-            <xsl:value-of
+        : <xsl:value-of
                         select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno"></xsl:value-of></td>
             </tr>
             <tr>
@@ -30,18 +29,24 @@
                     <table width="100%" border="0" cellspacing="5" cellpadding="5">
                         <tr>
                             <td width="33%" class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptContents.xsl','{$fileId}');">
-        Contents</a>
-                            </td>
+                                <a
+                                    href="javascript:void(0)"
+                                    onclick="performXSLTTransformation('TEIManuscriptContents.xsl');"
+                                >
+        Manuscript Contents</a>
+                            </td> <!--
+                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
                             <td width="33%" class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptBiblio.xsl','{$fileId}');">Codicological
-        Bibliography</a>
+                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">
+        Manuscript Codicological
+                                    Bibliography</a>
                             </td>
+                            <!--
+                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
                             <td class="subnav_off">
                                 <a href="javascript:void(0)"
-                                    onclick="fetchFile('TEIManuscriptDesc.xsl','{$fileId}','{tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}');">Codicological
+                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Manuscript
         Description</a>
                             </td>
                         </tr>
@@ -60,8 +65,7 @@
                         <xsl:value-of
                             select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n = $count]/tei:locus" />
                     </b>
-        :  
-                <i>
+        : <i>
                         <xsl:value-of
                             select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n = $count]/tei:title" />
                     </i>
@@ -79,17 +83,13 @@
                             <td align="left" valign="top"><!-- Book-Level -->
                                 <xsl:for-each
                                     select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n = $count]/tei:msItem">
-
-
                                     <xsl:if test="tei:workGroupHeading">
                                         <p>
                                             <h4>[<b>
                                                     <xsl:value-of
                                                         select="tei:workGroupHeading/tei:locus" />
                                                 </b>
-        ]  
-                    
-                    <xsl:choose>
+        ] <xsl:choose>
                                                     <xsl:when test="tei:workGroupHeading/tei:title">
 
                                                         <xsl:value-of

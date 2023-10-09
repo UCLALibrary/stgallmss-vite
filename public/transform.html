@@ -2,13 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <title>XSLT Transformation</title>
+  <meta charset="UTF-8">
+  <title>XSLT Transformation</title>
 </head>
 
 <body>
 
-    <!--table width="100%" border="0" cellspacing="5" cellpadding="5">
+  <!--table width="100%" border="0" cellspacing="5" cellpadding="5">
     <tr>
       <td width="33%" class="subnav_on">Contents</td>
       <td width="33%" class="subnav_off">
@@ -20,49 +20,53 @@
     </tr>
   </table-->
 
-    <!-- Render transformed HTML here -->
-    <div id="output"></div>
+  <!-- Render transformed HTML here -->
+  <div id="output"></div>
 
 
 
 
 
-    <script>
-        // Define the XSLT transformation function
-        function performXSLTTransformation(xslFileName) {
-            // Load XML content (replace with your XML file path)
-            fetch('tei.xml')
-                .then(response => response.text())
-                .then(xmlString => {
-                    // Load XSLT content (replace with your XSLT file path)
-                    fetch(`/${xslFileName}`)
-                        .then(response => response.text())
-                        .then(xslString => {
-                            // Parse XML and XSLT strings
-                            const parser = new DOMParser();
-                            const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
-                            const xslDoc = parser.parseFromString(xslString, 'text/xml');
+  <script>
+    // Define the XSLT transformation function
+    function performXSLTTransformation(xslFileName, count, pageArk) {
+      // Load XML content (replace with your XML file path)
+      fetch('tei.xml')
+        .then(response => response.text())
+        .then(xmlString => {
+          // Load XSLT content (replace with your XSLT file path)
+          fetch(`/${xslFileName}`)
+            .then(response => response.text())
+            .then(xslString => {
+              // Parse XML and XSLT strings
+              const parser = new DOMParser();
+              const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+              const xslDoc = parser.parseFromString(xslString, 'text/xml');
 
-                            // Create XSLTProcessor
-                            const xsltProcessor = new XSLTProcessor();
-                            xsltProcessor.importStylesheet(xslDoc);
+              // Create XSLTProcessor
+              const xsltProcessor = new XSLTProcessor();
+              xsltProcessor.importStylesheet(xslDoc);
 
-                            // Transform XML
-                            const resultDocument = xsltProcessor.transformToDocument(xmlDoc);
+              // Set parameters
+              xsltProcessor.setParameter(null, "count", count);
+              xsltProcessor.setParameter(null, "ark", pageArk);
 
-                            // Serialize the result to HTML
-                            const serializer = new XMLSerializer();
-                            const htmlString = serializer.serializeToString(resultDocument);
+              // Transform XML
+              const resultDocument = xsltProcessor.transformToDocument(xmlDoc);
 
-                            // Display the transformed HTML
-                            document.getElementById('output').innerHTML = htmlString;
-                        });
-                });
-        }
+              // Serialize the result to HTML
+              const serializer = new XMLSerializer();
+              const htmlString = serializer.serializeToString(resultDocument);
 
-        // Add an event listener to perform the transformation when the page loads
-        document.addEventListener('DOMContentLoaded', performXSLTTransformation('TEIManuscriptContents.xsl'));
-    </script>
+              // Display the transformed HTML
+              document.getElementById('output').innerHTML = htmlString;
+            });
+        });
+    }
+
+    // Add an event listener to perform the transformation when the page loads
+    document.addEventListener('DOMContentLoaded', performXSLTTransformation('TEIManuscriptContents.xsl'));
+  </script>
 </body>
 
 </html>
