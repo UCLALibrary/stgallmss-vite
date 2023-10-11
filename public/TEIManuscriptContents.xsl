@@ -97,7 +97,8 @@
                                 <DIV
                             class="tan_divider">
 
-                            <xsl:value-of select="position()" /> . <xsl:variable name="locusFacs"
+                            <xsl:value-of select="position()" /> . <xsl:variable
+                                name="locusFacs"
                                 select="normalize-space(tei:locus/@target)" />
                             <!-- if title does not exist use rubric -->
                                     <xsl:choose>
@@ -118,13 +119,15 @@
                                 </xsl:otherwise>
 
                             </xsl:choose>
-                            <!-- if title does not exist use rubric end -->
-                                    <span
-                                class="float">
-                                <xsl:value-of select="tei:locus" />
-                            </span>
+                               
+                                <!-- if title does not exist use rubric end -->
+                                <span
+                                    >
+                                    &#160; <xsl:value-of select="tei:locus" />
+                                </span>
+                           
                             <!-- rubric,incipit, explicit-->
-                                    <ul
+                            <ul
                                 style="list-style-type:none">
                                 <xsl:choose>
                                     <xsl:when test="tei:rubric">
@@ -160,7 +163,7 @@
                             <!-- rubric,incipit, explicit end-->
 
                             <!-- Bibliography -->
-                                    <xsl:if
+                            <xsl:if
                                 test="count(tei:listBibl) > 0">
                                 <xsl:if
                                     test="count(tei:listBibl/tei:head[. = 'Related Texts'] | tei:listBibl/tei:head[. = 'Bibliography'] | tei:listBibl/tei:head[. = 'Editions']  |  tei:listBibl/tei:head[. = 'Edition']   | tei:listBibl/tei:head[. = 'Edition and Bibliography']  |   tei:listBibl/tei:head[. = 'Translation'])  > 0">
@@ -180,16 +183,20 @@
 
                                 <!-- Content -->
                             </xsl:if>
-                                    <xsl:if
+                            <xsl:if
                                 test="count(tei:msItem) > 0">
-                                <a target="_top" style="border-style:none"
-                                    href="{$locusFacs}">
+                                <!--   href="{$locusFacs}" -->
+                                <a target="_top"
+                                    style="border-style:none"
+                                    href="javascript:void(0)"
+                                    onclick="performXSLTTransformation('TEIWorkContents.xsl','{@n}');"
+                                >
                                     <img src="/images/icon_content.jpg" width="20" height="20"
                                         alt="Content" style="" />
                                 </a><xsl:text> </xsl:text>
                             </xsl:if>
-                            <!-- Transcription  --> 
-                                    <xsl:choose>
+                            <!-- Transcription  -->
+                            <xsl:choose>
                                 <!-- dont remember why this condition was tested -->
                                 <xsl:when test="count(tei:msItem) = 0">
                                     <a target="_top" style="" href="javascript:void(0)"
@@ -210,7 +217,7 @@
                                     </a><xsl:text> </xsl:text>
                                 </xsl:otherwise>
                             </xsl:choose>
-                                    <br />
+                            <br />
 
                         </DIV>
 

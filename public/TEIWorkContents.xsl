@@ -134,8 +134,8 @@
                                             </xsl:otherwise>
 
                                         </xsl:choose><span
-                                            class="float">
-                                            <xsl:value-of select="tei:locus" />
+                                           >
+                                            &#160; <xsl:value-of select="tei:locus" />
                                         </span>
                 <ul
                                             style="list-style-type:none">

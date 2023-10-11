@@ -1,0 +1,429 @@
+@charset "utf-8";
+/* CSS Document */
+/* minor edit by Lisa McAulay 6/10/10 */
+/* minor edit by Lisa McAulay 9/03/10 */
+
+body {
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    BACKGROUND-COLOR: #999966;
+    font-size: 12px
+}
+
+tr,
+td {
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    font-size: 12px
+}
+
+/*this class is for the blue container on all pages - except split frames*/
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 981px;
+    height: auto;
+    BACKGROUND: url(/stgallmss/images//bk_horizontal.jpg) repeat-y
+}
+
+/*Header - banner image*/
+.header {
+    padding-top: 12px;
+    padding-right: 5px;
+    padding-bottom: 0px;
+    width: auto;
+    height: 68px
+}
+
+.tan_line {
+    background-color: #C96;
+    width: 925px;
+    height: 10px;
+    margin-left: 25px;
+    margin-right: 20px
+}
+
+/*Content on white background*/
+
+.content {
+    margin-left: 26px;
+    margin-right: auto;
+    margin-bottom: 15px;
+    background-color: white;
+    width: 910px;
+    padding: 7px
+}
+
+.text_align {
+    text-align: justify
+}
+
+/*footer image on all pages except split frames*/
+#footer {
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    FONT-SIZE: 9pt;
+    width: auto;
+    height: 60px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    BACKGROUND: url(images/footer_bk.jpg) no-repeat
+}
+
+/* Links - a, a visited, a active and a hover for entire site except menu and submenu*/
+A {
+    FONT-WEIGHT: bold;
+    COLOR: #996633;
+    TEXT-DECORATION: underline
+}
+
+A:hover {
+    COLOR: #990000;
+    TEXT-DECORATION: none
+}
+
+/*Within content section - title of page*/
+
+H1 {
+    FONT-WEIGHT: normal;
+    FONT-SIZE: 125%;
+    COLOR: #993300;
+    LINE-HEIGHT: 26px;
+    FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+    LETTER-SPACING: 0.1em
+}
+
+
+/* Menu section */
+
+
+.menu_container {
+    border: 0px;
+    width: 925px;
+    margin-left: 25px;
+    margin-right: auto
+}
+
+/*this menu container is for non split frame page menus*/
+
+.top_nav {
+    border: 0px;
+    width: 925px;
+    margin-left: auto;
+    margin-right: auto
+}
+
+/* Specific to menu center alignment of Frame Set header file */
+
+
+.menu {
+    BORDER-RIGHT: #000 1px solid;
+    FONT-SIZE: 1em;
+    Z-INDEX: 101;
+    WIDTH: 894px;
+    POSITION: relative;
+    HEIGHT: 32px
+}
+
+* HTML .menu {
+    WIDTH: 894px
+}
+
+.menu UL {
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: 0px;
+    PADDING-TOP: 0px;
+    LIST-STYLE-TYPE: none
+}
+
+.menu UL UL {
+    WIDTH: 149px
+}
+
+.menu LI {
+    FLOAT: left;
+    WIDTH: 149px;
+    POSITION: relative;
+    TEXT-ALIGN: center
+}
+
+.menu A {
+    BORDER-RIGHT: #000 0px solid;
+    BORDER-TOP: #000 1px solid;
+    DISPLAY: block;
+    PADDING-LEFT: 10px;
+    FONT-SIZE: 12px;
+    BACKGROUND: #a4c2c2;
+    BORDER-LEFT: #000 1px solid;
+    WIDTH: 138px;
+    COLOR: #003333;
+    LINE-HEIGHT: 29px;
+    BORDER-BOTTOM: #000 1px solid;
+    FONT-FAMILY: Arial, Helvetica, sans-serif;
+    HEIGHT: 30px;
+    TEXT-DECORATION: none
+}
+
+/*.menu A:visited {
+	BORDER-RIGHT: #000 0px solid; BORDER-TOP: #000 1px solid; DISPLAY: block; PADDING-LEFT: 10px; FONT-SIZE: 12px; BACKGROUND: #a4c2c2; BORDER-LEFT: #000 1px solid; WIDTH: 138px; COLOR: #003333; LINE-HEIGHT: 29px; BORDER-BOTTOM: #000 1px solid; FONT-FAMILY: Arial, Helvetica, sans-serif; HEIGHT: 30px; TEXT-DECORATION: none
+}*/
+* HTML .menu A {
+    WIDTH: 138px
+}
+
+/** HTML .menu A:visited {
+	WIDTH: 138px
+}*/
+.menu UL UL A.drop {
+    BACKGROUND: #cc6600
+}
+
+/*.menu UL UL A.drop:visited {
+	BACKGROUND: #cc6600
+}*/
+.menu UL UL A.drop:hover {
+    BACKGROUND: #a54f1c
+}
+
+.menu UL UL :hover>A.drop {
+    BACKGROUND: url(images/drop.gif) #fefdcc no-repeat right bottom
+}
+
+.menu UL UL UL A {
+    BACKGROUND: #a54f1c
+}
+
+/*.menu UL UL UL A:visited {
+	BACKGROUND: #a54f1c
+}*/
+.menu UL UL UL A:hover {
+    BACKGROUND: #a54f1c
+}
+
+.menu UL UL {
+    BORDER-TOP: #000 1px solid;
+    LEFT: 0px;
+    VISIBILITY: hidden;
+    WIDTH: 149px;
+    POSITION: absolute;
+    TOP: 31px;
+    HEIGHT: 0px
+}
+
+* HTML .menu UL UL {
+    TOP: 31px
+}
+
+.menu UL UL UL {
+    LEFT: 149px;
+    WIDTH: 149px;
+    TOP: -1px
+}
+
+.menu UL UL UL.left {
+    LEFT: -149px
+}
+
+.menu TABLE {
+    LEFT: 0px;
+    POSITION: absolute;
+    TOP: 0px;
+    BORDER-COLLAPSE: collapse
+}
+
+.menu UL UL A {
+    BORDER-TOP-WIDTH: 0px;
+    PADDING-RIGHT: 10px;
+    PADDING-LEFT: 10px;
+    BORDER-LEFT-WIDTH: 1px;
+    BACKGROUND: #bcad95;
+    BORDER-BOTTOM-WIDTH: 1px;
+    PADDING-BOTTOM: 5px;
+    WIDTH: 128px;
+    COLOR: #000;
+    LINE-HEIGHT: 1em;
+    PADDING-TOP: 5px;
+    HEIGHT: auto;
+    BORDER-RIGHT-WIDTH: 1px
+}
+
+/*.menu UL UL A:visited {
+	BORDER-TOP-WIDTH: 0px; PADDING-RIGHT: 10px; PADDING-LEFT: 10px; BORDER-LEFT-WIDTH: 1px; BACKGROUND: #bcad95; BORDER-BOTTOM-WIDTH: 1px; PADDING-BOTTOM: 5px; WIDTH: 128px; COLOR: #000; LINE-HEIGHT: 1em; PADDING-TOP: 5px; HEIGHT: auto; BORDER-RIGHT-WIDTH: 1px
+}*/
+* HTML .menu UL UL A {
+    WIDTH: 128px
+}
+
+/** HTML .menu UL UL A:visited {
+	WIDTH: 128px
+}*/
+.menu A:hover {
+    BACKGROUND: #9f4e26;
+    COLOR: #003333
+}
+
+.menu UL UL A:hover {
+    BACKGROUND: #9f4e26;
+    COLOR: #003333
+}
+
+.menu :hover>A {
+    BACKGROUND: #9f4e26;
+    COLOR: #fff
+}
+
+.menu UL UL :hover>A {
+    BACKGROUND: #9f4e26;
+    COLOR: #fff
+}
+
+.menu UL LI:hover UL {
+    VISIBILITY: visible
+}
+
+.menu UL A:hover UL {
+    VISIBILITY: visible
+}
+
+.menu UL :hover UL UL {
+    VISIBILITY: hidden
+}
+
+.menu UL :hover UL :hover UL {
+    VISIBILITY: visible
+}
+
+#XXXXXXX_padding {
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 20px;
+    PADDING-TOP: 20px
+}
+
+/*for page title on white content area*/
+
+.pageName {
+    FONT-SIZE: 120%;
+    COLOR: #993300;
+    FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+    LETTER-SPACING: 0.1em;
+    font-weight: bold
+}
+
+/* For starting few words of content text paragraph which appear in blue*/
+.subHeader {
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 100%;
+    COLOR: #669999;
+    FONT-FAMILY: Georgia, "Times New Roman", Times, serif;
+    LETTER-SPACING: 0.1em
+}
+
+/*Not sure what this is for*/
+.calendarText {
+    FONT-SIZE: 80%;
+    COLOR: #333333;
+    FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+
+/*Not sure what redLinea nd blueLine do? */
+.redLine {
+    COLOR: #ff0000
+}
+
+.blueLine {
+    COLOR: #0000ff
+}
+
+
+
+
+/* for left page of Frame Sets */
+
+/* added by Lisa, 6/10/10 */
+table.textAndImage {
+    width: 100%;
+    border: 0;
+    /* cell-padding:3;
+	 cellspacing:0;*/
+    background-color: #ffffff;
+}
+
+/* for  codicological description page */
+/* added by Lisa, 9/3/10 */
+table.collation {
+    padding: 5px;
+}
+
+tr.collation {
+    vertical-align: middle;
+}
+
+td.collation {
+    vertical-align: middle;
+}
+
+
+/* end of additions */
+.title {
+    font-size: 14px;
+    font-weight: bold
+}
+
+.subnav_on {
+    background-color: #9f4e26;
+    font-weight: bold;
+    color: white;
+    text-align: center
+}
+
+.subnav_off {
+    font-weight: bold;
+    background-color: #d9e7f8;
+    text-align: center
+}
+
+.subnav_off {
+    font-weight: bold;
+    background-color: #d9e7f8;
+    text-align: center;
+    text-decoration: none;
+    color: #000
+}
+
+.subnav_off a:hover {
+    font-weight: bold;
+    background-color: #9f4e26;
+    text-align: center;
+    text-decoration: none;
+    color: #fff
+}
+
+/*This class adjusts the individual content section chunks on left hand frames - divided by tan divider lines*/
+.tan_divider {
+    background-image: url('/stgallmss/images/tan_divider.jpg');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    padding-top: 12px;
+    width: 100%;
+    height: auto
+}
+
+
+/*SPAN.float controls the page number properties to the right of the text in content*/
+SPAN.float {
+    FLOAT: right;
+    font-weight: bold;
+    POSITION: static
+}
+
+#loading {
+    width: 200px;
+    height: 100px;
+    background-color: #c0c0c0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -100px;
+    text-align: center;
+}
