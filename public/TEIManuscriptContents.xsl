@@ -12,15 +12,13 @@
     <xsl:template match="/">
         <xsl:variable name="checkBibliography" />
         <xsl:variable name="checkTranslation" />
-        
-                <table
-            width="95%" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
+
+        <table width="95%" border="0" align="center" cellpadding="3" cellspacing="0" bgcolor="#ffffff">
             <!-- manuscript  repository and idno-->
             <tr>
-                <td class="title"><xsl:value-of
-                        select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository"></xsl:value-of>
-        : <xsl:value-of
-                        select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno"></xsl:value-of>
+                <td class="title">
+                    <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository"></xsl:value-of>
+        :                    <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno"></xsl:value-of>
                 </td>
             </tr>
             <!-- manuscript  repository and idno end-->
@@ -31,19 +29,15 @@
                     <table width="100%" border="0" cellspacing="5" cellpadding="5">
                         <tr>
                             <td width="33%" class="subnav_on">Manuscript Contents</td>
-                            <!--
-                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
+                            <!-- href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
                             <td width="33%" class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Manuscript
+                                <a href="javascript:void(0)" onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Manuscript
         Codicological
                                     Bibliography</a>
                             </td>
-                            <!--
-                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
+                            <!-- href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
                             <td class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Manuscript
+                                <a href="javascript:void(0)" onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Manuscript
         Codicological
                                     Description</a>
                             </td>
@@ -65,169 +59,151 @@
                         <b>
                             <xsl:text>Temporary Summary of Contents:</xsl:text>
                         </b>
-                                <br></br>
-                                <br></br>
-                                <xsl:copy-of
-                            select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:mini" />
+                        <br></br>
+                        <br></br>
+                        <xsl:copy-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:mini" />
                     </xsl:if>
                     <!-- manuscripts which dont have  table of contents end-->
                     <!-- workGroup -->
-                    <xsl:for-each
-                        select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem">
+
+                    <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem">
 
                         <xsl:if test="tei:workGroupHeading">
-                            <p>
-                                <h4>[<b>
-                                        <xsl:value-of select="tei:workGroupHeading/tei:locus" />
-                                    </b>
-        ] <xsl:choose>
-                                        <xsl:when test="tei:workGroupHeading/tei:title">
-                                            <xsl:value-of select="tei:workGroupHeading/tei:title" />
-                                        </xsl:when>
+                            <p> heading for workGroupHeading <h4>[                                <b>
+                                    <xsl:value-of select="tei:workGroupHeading/tei:locus" />
+                                </b>
+        ]                                <xsl:choose>
+                                    <xsl:when test="tei:workGroupHeading/tei:title">
+                                        <xsl:value-of select="tei:workGroupHeading/tei:title" />
+                                    </xsl:when>
 
-                                        <xsl:otherwise>
-                                            <xsl:value-of select="tei:workGroupHeading/tei:rubric" />
-                                        </xsl:otherwise>
-                                    </xsl:choose>
+                                    <xsl:otherwise>
+                                        <xsl:value-of select="tei:workGroupHeading/tei:rubric" />
+                                    </xsl:otherwise>
+                                </xsl:choose>
 
-                                </h4>
-                            </p>
-                        </xsl:if>
-                                
-                                <DIV
-                            class="tan_divider">
+                            </h4>
+                        </p>
+                    </xsl:if>
 
-                            <xsl:value-of select="position()" /> . <xsl:variable
-                                name="locusFacs"
-                                select="normalize-space(tei:locus/@target)" />
-                            <!-- if title does not exist use rubric -->
-                                    <xsl:choose>
+                    <DIV class="tan_divider">
 
-                                <xsl:when test="tei:title">
-                                    <a target="_top"
-                                        href="{$locusFacs}">
-                                        <xsl:value-of select="tei:title" />
-                                    </a> <!--
+                        <xsl:value-of select="position()" />
+ .                        <xsl:variable name="locusFacs" select="normalize-space(tei:locus/@target)" />
+                        <!-- if title does not exist use rubric -->
+                        <xsl:choose>
+
+                            <xsl:when test="tei:title">
+                                <a target="_top" href="{$locusFacs}">
+                                    <xsl:value-of select="tei:title" />
+                                </a>                                <!--
                                     This link should take the user to the Contents page for the work
                                     (generated by TEITranscription.xsl) -->
-                                </xsl:when>
-                                <xsl:otherwise>
-                                    <a target="_top"
-                                        href="{$locusFacs}">
-                                        <xsl:value-of select="tei:rubric" />
-                                    </a>
-                                </xsl:otherwise>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <a target="_top" href="{$locusFacs}">
+                                    <xsl:value-of select="tei:rubric" />
+                                </a>
+                            </xsl:otherwise>
 
-                            </xsl:choose>
-                               
-                                <!-- if title does not exist use rubric end -->
-                                <span
-                                    >
-                                    &#160; <xsl:value-of select="tei:locus" />
-                                </span>
-                           
-                            <!-- rubric,incipit, explicit-->
-                            <ul
-                                style="list-style-type:none">
-                                <xsl:choose>
-                                    <xsl:when test="tei:rubric">
+                        </xsl:choose>
 
-                                        <li>
-                                            <b>Rubric: </b>
-                                            <xsl:value-of select="tei:rubric" />
-                                        </li>
+                        <!-- if title does not exist use rubric end -->
+                        <span>
+        &#160; <xsl:value-of select="tei:locus" />
+                        </span>
 
-                                    </xsl:when>
-                                    <xsl:otherwise></xsl:otherwise>
-                                </xsl:choose>
-                                <xsl:if test="tei:incipit">
-                                    <li>
-                                        <b>Incipit: </b>
-                                        <xsl:value-of select="tei:incipit" />
-                                    </li>
-                                </xsl:if>
-                                <xsl:if test="tei:explicit">
-                                    <li>
-                                        <b>Explicit: </b>
-                                        <xsl:value-of select="tei:explicit" />
-                                    </li>
-                                </xsl:if>
-                                <xsl:if test="tei:note">
-                                    <li>
-                                        <b>Remarks: </b>
-                                        <xsl:value-of select="tei:note" />
-                                    </li>
-                                </xsl:if>
-                            </ul>
-
-                            <!-- rubric,incipit, explicit end-->
-
-                            <!-- Bibliography -->
-                            <xsl:if
-                                test="count(tei:listBibl) > 0">
-                                <xsl:if
-                                    test="count(tei:listBibl/tei:head[. = 'Related Texts'] | tei:listBibl/tei:head[. = 'Bibliography'] | tei:listBibl/tei:head[. = 'Editions']  |  tei:listBibl/tei:head[. = 'Edition']   | tei:listBibl/tei:head[. = 'Edition and Bibliography']  |   tei:listBibl/tei:head[. = 'Translation'])  > 0">
-                                    <xsl:if
-                                        test="count(tei:listBibl/tei:head[. = 'Related Texts'] | tei:listBibl/tei:head[. = 'Bibliography'] | tei:listBibl/tei:head[. = 'Editions'] |  tei:listBibl/tei:head[. = 'Translation'] | tei:listBibl/tei:head[. = 'Edition and Bibliography'] | tei:listBibl/tei:head[. = 'Edition']/following-sibling::tei:biblStruct) > 0">
-                                        <!--
-                                        href="/stgallmss/viewFile.do?xmlstylesheet=TEIWorkBibliography.xsl&amp;count={@n}&amp;fileId={$fileId}" -->
-                                                <a
-                                            style="" href="javascript:void(0)"
-                                            onclick="performXSLTTransformation('TEIWorkBibliography.xsl','{@n}');">
-                                            <img src="/images/icon_bibliography.jpg" width="20"
-                                                height="20" alt="Bibliography" />
-                                        </a>         <xsl:text> </xsl:text>
-                                    </xsl:if>
-                                </xsl:if>
-
-
-                                <!-- Content -->
-                            </xsl:if>
-                            <xsl:if
-                                test="count(tei:msItem) > 0">
-                                <!--   href="{$locusFacs}" -->
-                                <a target="_top"
-                                    style="border-style:none"
-                                    href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIWorkContents.xsl','{@n}');"
-                                >
-                                    <img src="/images/icon_content.jpg" width="20" height="20"
-                                        alt="Content" style="" />
-                                </a><xsl:text> </xsl:text>
-                            </xsl:if>
-                            <!-- Transcription  -->
+                        <!-- rubric,incipit, explicit-->
+                        <ul style="list-style-type:none">
                             <xsl:choose>
-                                <!-- dont remember why this condition was tested -->
-                                <xsl:when test="count(tei:msItem) = 0">
-                                    <a target="_top" style="" href="javascript:void(0)"
-                                        onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$locusFacs}')">
-                                        <img src="/images/icon_text.jpg" width="20" height="20"
-                                            alt="Text" style="" />
-                                    </a><xsl:text> </xsl:text>
+                                <xsl:when test="tei:rubric">
+
+                                    <li>
+                                        <b>Rubric: </b>
+                                        <xsl:value-of select="tei:rubric" />
+                                    </li>
+
                                 </xsl:when>
-
-                                <!-- editionArk needs to be added above -->
-                                <xsl:otherwise>
-                                    <a target="_top" style=""
-                                        href="javascript:void(0)"
-                                        onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$locusFacs}')"
-                                    >
-                                        <img src="/images/icon_text.jpg" width="20" height="20"
-                                            alt="Text" style="" />
-                                    </a><xsl:text> </xsl:text>
-                                </xsl:otherwise>
+                                <xsl:otherwise></xsl:otherwise>
                             </xsl:choose>
-                            <br />
+                            <xsl:if test="tei:incipit">
+                                <li>
+                                    <b>Incipit: </b>
+                                    <xsl:value-of select="tei:incipit" />
+                                </li>
+                            </xsl:if>
+                            <xsl:if test="tei:explicit">
+                                <li>
+                                    <b>Explicit: </b>
+                                    <xsl:value-of select="tei:explicit" />
+                                </li>
+                            </xsl:if>
+                            <xsl:if test="tei:note">
+                                <li>
+                                    <b>Remarks: </b>
+                                    <xsl:value-of select="tei:note" />
+                                </li>
+                            </xsl:if>
+                        </ul>
 
-                        </DIV>
+                        <!-- rubric,incipit, explicit end-->
+
+                        <!-- Bibliography -->
+                        <xsl:if test="count(tei:listBibl) > 0">
+                            <xsl:if test="count(tei:listBibl/tei:head[. = 'Related Texts'] | tei:listBibl/tei:head[. = 'Bibliography'] | tei:listBibl/tei:head[. = 'Editions']  |  tei:listBibl/tei:head[. = 'Edition']   | tei:listBibl/tei:head[. = 'Edition and Bibliography']  |   tei:listBibl/tei:head[. = 'Translation'])  > 0">
+                                <xsl:if test="count(tei:listBibl/tei:head[. = 'Related Texts'] | tei:listBibl/tei:head[. = 'Bibliography'] | tei:listBibl/tei:head[. = 'Editions'] |  tei:listBibl/tei:head[. = 'Translation'] | tei:listBibl/tei:head[. = 'Edition and Bibliography'] | tei:listBibl/tei:head[. = 'Edition']/following-sibling::tei:biblStruct) > 0">
+                                    <!-- href="/stgallmss/viewFile.do?xmlstylesheet=TEIWorkBibliography.xsl&amp;count={@n}&amp;fileId={$fileId}" -->
+                                    <a style="" href="javascript:void(0)" onclick="performXSLTTransformation('TEIWorkBibliography.xsl','{@n}');">
+                                        <img src="/images/icon_bibliography.jpg" width="20" height="20" alt="Bibliography" />
+                                    </a>
+                                    <xsl:text></xsl:text>
+                                </xsl:if>
+                            </xsl:if>
 
 
-                    </xsl:for-each>
-                    <!-- work end -->
-                </td>
-            </tr>
-        </table>
+                            <!-- Content -->
+                        </xsl:if>
+                        <xsl:if test="count(tei:msItem) > 0">
 
-    </xsl:template>
+                            <!-- href="{$locusFacs}" locusFacs its th msitem target variable created in this xslt-->
+                            <a target="_top" style="border-style:none" href="javascript:void(0)" onclick="performXSLTTransformation('TEIWorkContents.xsl','{@n}');">
+                                <img src="/images/icon_content.jpg" width="20" height="20" alt="Content" style="" />
+                            </a>
+                            <xsl:text></xsl:text>
+                        </xsl:if>
+                        <!-- Transcription  -->
+                        <xsl:choose>
+                            <!-- dont remember why this condition was tested -->
+                            <xsl:when test="count(tei:msItem) = 0">
+
+                                <xsl:variable name="transcriptionFacs" select="normalize-space(tei:locus/@facs)" />
+                                <a target="_top" style="" href="javascript:void(0)" onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$transcriptionFacs}')">
+                                    <img src="/images/icon_text.jpg" width="20" height="20" alt="Text" style="" />
+                                </a>
+                                <xsl:text></xsl:text>
+                            </xsl:when>
+
+                            <!-- editionArk needs to be added above -->
+                            <xsl:otherwise>
+
+                                <xsl:variable name="transcriptionFacs" select="normalize-space(tei:locus/@facs)" />
+                                <a target="_top" style="" href="javascript:void(0)" onclick="performXSLTTransformation('TEITranscription.xsl','{@n}','{$transcriptionFacs}')">
+                                    <img src="/images/icon_text.jpg" width="20" height="20" alt="Text" style="" />
+                                </a>
+                                <xsl:text></xsl:text>
+                            </xsl:otherwise>
+                        </xsl:choose>
+                        <br />
+
+                    </DIV>
+
+
+                </xsl:for-each>
+                <!-- work end -->
+            </td>
+        </tr>
+    </table>
+
+</xsl:template>
 
 </xsl:stylesheet>

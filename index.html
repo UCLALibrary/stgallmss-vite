@@ -4,13 +4,63 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="stylesheet" href="/styles/stgallmss.css" type="text/css" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
 </head>
 
 <body>
-  <div id="app"></div>
-  <script type="module" src="/main.js"></script>
+
+  <div id="app">
+    <h1>Sample TEI with no Transcription</h1>
+    <div id="output"></div>
+  </div>
+
+  <!--script type="module" src="/main.js"></script-->
+  <script>
+    console.log("whwre are the logs")
+    // Define the XSLT transformation function
+    function performXSLTTransformation(xslFileName, count, pageArk) {
+      console.log("the page ark is: ", pageArk)
+      // Load XML content (replace with your XML file path)
+      fetch('tei.xml')
+        .then(response => response.text())
+        .then(xmlString => {
+          // Load XSLT content (replace with your XSLT file path)
+          fetch(`/${xslFileName}`)
+            .then(response => response.text())
+            .then(xslString => {
+              // Parse XML and XSLT strings
+              const parser = new DOMParser();
+              const xmlDoc = parser.parseFromString(xmlString, 'text/xml');
+              const xslDoc = parser.parseFromString(xslString, 'text/xml');
+
+              // Create XSLTProcessor
+              const xsltProcessor = new XSLTProcessor();
+              xsltProcessor.importStylesheet(xslDoc);
+
+              // Set parameters
+              xsltProcessor.setParameter(null, "count", count);
+              xsltProcessor.setParameter(null, "ark", pageArk);
+              console.log("the page ark is: ", pageArk)
+
+              // Transform XML
+              const resultDocument = xsltProcessor.transformToDocument(xmlDoc);
+
+              // Serialize the result to HTML
+              const serializer = new XMLSerializer();
+              const htmlString = serializer.serializeToString(resultDocument);
+
+              // Display the transformed HTML
+              document.getElementById('output').innerHTML = htmlString;
+            });
+        });
+    }
+
+    // Add an event listener to perform the transformation when the page loads
+    document.addEventListener('DOMContentLoaded', performXSLTTransformation('TEIManuscriptContents.xsl'));
+  </script>
+
 </body>
 
 </html>

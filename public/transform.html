@@ -22,6 +22,7 @@
   </table-->
 
   <!-- Render transformed HTML here -->
+  <h1> Sample TEI with transcription </h1>
   <div id="output"></div>
 
 
@@ -29,10 +30,12 @@
 
 
   <script>
+    console.log("whwre are the logs")
     // Define the XSLT transformation function
     function performXSLTTransformation(xslFileName, count, pageArk) {
+      console.log("the page ark is: ", pageArk)
       // Load XML content (replace with your XML file path)
-      fetch('tei.xml')
+      fetch('21198-zz00161mpp-1-master-lm-2023-10-16.xml')
         .then(response => response.text())
         .then(xmlString => {
           // Load XSLT content (replace with your XSLT file path)
@@ -51,6 +54,7 @@
               // Set parameters
               xsltProcessor.setParameter(null, "count", count);
               xsltProcessor.setParameter(null, "ark", pageArk);
+              console.log("the page ark is: ", pageArk)
 
               // Transform XML
               const resultDocument = xsltProcessor.transformToDocument(xmlDoc);

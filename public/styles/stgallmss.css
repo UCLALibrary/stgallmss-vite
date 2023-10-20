@@ -427,3 +427,16 @@ SPAN.float {
     margin-left: -100px;
     text-align: center;
 }
+
+.transcription-title {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    gap: 12px;
+    margin: 5px;
+}
+
+.transcription-text {
+    margin: 15px;
+}

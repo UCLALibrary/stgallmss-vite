@@ -25,22 +25,17 @@
                     <!-- sub nav table for left view frame-->
                     <table width="100%" border="0" cellspacing="5" cellpadding="5">
                         <tr>
-                            <a
-                                href="javascript:void(0)"
-                                onclick="performXSLTTransformation('TEIManuscriptContents.xsl');"
-                            >
-        Contents</a> <!--
-                                    href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
                             <td width="33%" class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Codicological
+                                <a href="javascript:void(0)" onclick="performXSLTTransformation('TEIManuscriptContents.xsl');">
+        Contents</a>
+                            </td>                            <!-- href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptBiblio.xsl&amp;fileId={$fileId}"-->
+                            <td width="33%" class="subnav_off">
+                                <a href="javascript:void(0)" onclick="performXSLTTransformation('TEIManuscriptBiblio.xsl');">Codicological
         Bibliography</a>
                             </td>
-                            <!--
-                            href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
+                            <!-- href="/stgallmss/viewFile.do?xmlstylesheet=TEIManuscriptDesc.xsl&amp;imageark={tei:TEI/tei:text/tei:body/tei:msDesc/tei:physDesc/tei:collation/@ark}&amp;fileId={$fileId}"-->
                             <td class="subnav_off">
-                                <a href="javascript:void(0)"
-                                    onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Codicological
+                                <a href="javascript:void(0)" onclick="performXSLTTransformation('TEIManuscriptDesc.xsl');">Codicological
         Description</a>
                             </td>
                         </tr>
@@ -57,27 +52,19 @@
 
                         <!-- heading information; manuscript number, etc. -->
 
-                        <span><xsl:value-of
-                                select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository"
-                            />
-        : <xsl:value-of
-                                select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno" />
-                                    <br />
-         <b>
-                                <xsl:value-of
-                                    select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:locus"
-                                />
+                        <span>
+                            <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:repository" />
+        :                            <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msIdentifier/tei:idno" />
+                            <br />
+                            <b>
+                                <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:locus" />
                             </b>
                             <!--href="{tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:locus/@facs}" -->
-        : <a target="_top" href="javascript:void(0)"
-                                onclick="performXSLTTransformation('TEIWorkContents.xsl','{$count}');"
-                            >
+        :                            <a target="_top" href="javascript:void(0)" onclick="performXSLTTransformation('TEIWorkContents.xsl','{$count}');">
                                 <i>
-                                    <xsl:value-of
-                                        select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:title"
-                                    />
+                                    <xsl:value-of select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:title" />
                                 </i>
-                            </a> <!--
+                            </a>                            <!--
                             this link takes you to the transcription page(TEITranscription.xsl)-->
                         </span>
                         <p>
@@ -85,27 +72,24 @@
                             <ol style="list-style-type:none" id="WorkBibiliography">
 
                                 <!-- for each listBibl element under the msItem, do the following -->
-                                <xsl:for-each
-                                    select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:listBibl">
+                                <xsl:for-each select="tei:TEI/tei:text/tei:body/tei:msDesc/tei:msContents/tei:msItem[@n=$count]/tei:listBibl">
                                     <li>
                                         <xsl:if test="tei:nobib">
-                                            <xsl:text>See </xsl:text> <a target="_top"
-                                                style="border-style:none"
-                                                href="/stgallmss/viewItem.do?xmlstylesheet=TEIWorkContents.xsl&amp;count={@n}&amp;pageArk={tei:locus/@facs}&amp;fileId={$fileId}">
-        here.</a><xsl:text> </xsl:text>
+                                            <xsl:text>See </xsl:text>
+                                            <a target="_top" style="border-style:none" href="/stgallmss/viewItem.do?xmlstylesheet=TEIWorkContents.xsl&amp;count={@n}&amp;pageArk={tei:locus/@facs}&amp;fileId={$fileId}">
+        here.</a>
+                                            <xsl:text></xsl:text>
 
                                         </xsl:if>
-                                        <!--
-                                        /stgallmss/viewItem.do?xmlstylesheet=TEIWorkContents.xsl&amp;count={@n}&amp;pageArk={tei:locus/@facs}&amp;fileId={$fileId} -->
+                                        <!-- /stgallmss/viewItem.do?xmlstylesheet=TEIWorkContents.xsl&amp;count={@n}&amp;pageArk={tei:locus/@facs}&amp;fileId={$fileId} -->
                                         <!-- print in bold the listBibl heading -->
                                         <b>
-                                            <xsl:value-of select="normalize-space(tei:head)"
-                                            />
+                                            <xsl:value-of select="normalize-space(tei:head)" />
                                         </b>
                                         <!-- for each citation, do the following -->
                                         <xsl:for-each select="tei:biblStruct">
                                             <!-- each citation gets its own paragraph -->
-                                                    <p>
+                                            <p>
                                                 <xsl:call-template name="lisabibliography" />
                                             </p>
 
